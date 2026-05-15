@@ -10,7 +10,7 @@ interface StaffMember {
 }
 
 const staffData: StaffMember[] = [
-  { name: 'Ms. N. Magwaza', position: 'Principal', category: 'Leadership', image: '/assets/about/teprincipal.png' },
+  { name: 'Ms. N. Magwaza', position: 'Principal', category: 'Leadership', image: '/assets/about/msprincipal.png' },
   { name: 'Educator', position: 'Deputy Principal', category: 'Leadership' },
   { name: 'Educator', position: 'Head of Department — Languages', category: 'Departmental Heads', subject: 'Languages' },
   { name: 'Educator', position: 'Head of Department — Sciences', category: 'Departmental Heads', subject: 'Sciences' },

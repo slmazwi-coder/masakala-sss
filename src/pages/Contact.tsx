@@ -17,16 +17,16 @@ export const Contact = () => {
                   <MapPin className="shrink-0 mt-0.5 text-school-blue" size={20} />
                   <div>
                     <p className="font-semibold">Physical Address</p>
-                    <p className="text-sm text-gray-500">6902 Runnerveld Road, Shayamoya, Kokstad</p>
-                    <p className="text-sm text-gray-500">KwaZulu-Natal, South Africa</p>
+                    <p className="text-sm text-gray-500">Masakala A/A, Matatiele, 4730</p>
+                    <p className="text-sm text-gray-500">Eastern Cape, South Africa</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-gray-700">
                   <Phone className="shrink-0 mt-0.5 text-school-blue" size={20} />
                   <div>
                     <p className="font-semibold">Telephone / Mobile</p>
-                    <p className="text-sm text-gray-500">+27 82 611 7032</p>
-                    <p className="text-xs text-gray-400">(Ms. N. Magwaza - Principal)</p>
+                    <p className="text-sm text-gray-500">+27 78 394 9015</p>
+                    <p className="text-xs text-gray-400">(Ms. N. Magwaza — Principal)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-gray-700">
@@ -58,7 +58,7 @@ export const Contact = () => {
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 min-h-[400px]">
             <iframe
               title="Masakala SSS Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500!2d29.424!3d-30.548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKokstad%2C+KwaZulu-Natal!5e0!3m2!1sen!2sza!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500!2d28.8!3d-30.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMatatiele%2C+Eastern+Cape!5e0!3m2!1sen!2sza!4v1"
               className="w-full h-full min-h-[400px] border-0"
               allowFullScreen
               loading="lazy"

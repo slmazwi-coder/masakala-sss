@@ -24,9 +24,9 @@ export const About = () => {
               <h2 className="text-2xl font-bold text-school-blue">Our School</h2>
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed text-base">
-              <p>Masakala Senior Secondary School is a public no-fee secondary school located in Shayamoya, Kokstad, KwaZulu-Natal. Our school was established in January 2018 to serve the educational needs of our community.</p>
-              <p>As a no-fee public school managed by the KwaZulu-Natal Department of Education, we are committed to providing quality education to every learner. We offer the National Senior Certificate (NSC) CAPS curriculum across Grades 8–12, preparing our learners for successful futures.</p>
-              <p>Under the leadership of Principal Ms. N. Magwaza, the school serves approximately 1,187 learners with a dedicated team of 29 educators, committed to excellence and the holistic development of every student in the Harry Gwala District.</p>
+              <p>Masakala Senior Secondary School is a public no-fee secondary school located in Masakala A/A, Matatiele, Eastern Cape. Our school was established to serve the educational needs of our community.</p>
+              <p>As a no-fee public school managed by the Eastern Cape Department of Education, we are committed to providing quality education to every learner. We offer the National Senior Certificate (NSC) CAPS curriculum across Grades 8–12, preparing our learners for successful futures.</p>
+              <p>Under the leadership of Principal Ms. N. Magwaza, the school is committed to excellence and the holistic development of every student.</p>
             </div>
           </motion.div>
 
@@ -76,7 +76,7 @@ export const About = () => {
               <div className="flex flex-col items-center justify-center bg-school-blue p-8 md:p-10">
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
                   <div className="w-full h-full flex items-center justify-center bg-[#133d58]">
-                    <img src="/assets/about/teprincipal.png" alt="Ms. N. Magwaza" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+                    <img src="/assets/about/msprincipal.png" alt="Ms. N. Magwaza" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white text-center leading-tight">Ms. N. Magwaza</h3>
@@ -89,7 +89,7 @@ export const About = () => {
                 <div className="space-y-4 text-gray-700 text-base sm:text-lg leading-relaxed">
                   <p>At Masakala Senior Secondary School, we are committed to providing a safe, inclusive and stimulating environment that enables every learner to reach their full potential through quality teaching, strong values and community partnership.</p>
                   <p>We are proud of our learners who achieved an 82% matric pass rate — a testament to the dedication of both our staff and our learners in striving for excellence in all we do. Our school may be new, but our commitment to academic excellence and holistic development is unwavering.</p>
-                  <p>Located in the heart of Shayamoya, we invite families and learners to join us in this journey of growth, learning, and achievement.</p>
+                  <p>Located in Masakala A/A, Matatiele, we invite families and learners to join us in this journey of growth, learning, and achievement.</p>
                 </div>
                 <div className="text-6xl font-serif leading-none mt-2 text-right opacity-40 select-none" style={{ color: '#C9A84C' }}>"</div>
               </div>
@@ -112,7 +112,7 @@ export const About = () => {
             {[
               { label: 'School Type', value: 'Public No-Fee School' },
               { label: 'Grades', value: 'Grade 8 – 12' },
-              { label: 'Location', value: 'Shayamoya, Kokstad' },
+              { label: 'Location', value: 'Masakala A/A, Matatiele' },
               { label: 'Established', value: '2018' },
             ].map((fact, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-center shadow border border-gray-100 border-b-4" style={{ borderBottomColor: '#1A5276' }}>

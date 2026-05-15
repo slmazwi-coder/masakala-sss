@@ -18,7 +18,7 @@ export const Footer = () => {
               />
               <div>
                 <h3 className="text-base font-bold leading-tight">Masakala Senior Secondary School</h3>
-                <p className="text-sm italic mt-0.5 text-white/70">"Progress Begins Here"</p>
+                <p className="text-sm italic mt-0.5 text-white/70">"Reach for the Sky"</p>
               </div>
             </div>
           </div>
@@ -29,11 +29,11 @@ export const Footer = () => {
             <ul className="space-y-3 text-white/80 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="shrink-0 mt-0.5" size={16} />
-                <span>6902 Runnerveld Road, Shayamoya, Kokstad</span>
+                <span>Masakala A/A, Matatiele, 4730</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="shrink-0" />
-                <span>+27 82 611 7032</span>
+                <span>+27 78 394 9015</span>
               </li>
             </ul>
           </div>
