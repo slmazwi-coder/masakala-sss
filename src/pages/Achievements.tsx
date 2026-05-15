@@ -41,7 +41,7 @@ export const Achievements = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="rounded-3xl overflow-hidden mb-12 shadow-2xl"
-          style={{ background: 'linear-gradient(135deg, #1B5E20 0%, #5c0000 100%)' }}
+          style={{ background: 'linear-gradient(135deg, #F9A825 0%, #5c0000 100%)' }}
         >
           <div className="p-8 sm:p-12 text-center text-white">
             <div className="flex justify-center mb-4">

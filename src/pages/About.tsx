@@ -45,7 +45,7 @@ export const About = () => {
                 onError={() => setCampusFailed(true)}
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-[#0A2E0A] via-[#1B5E20] to-[#4CAF50] flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-[#0A2E0A] via-[#F9A825] to-[#4CAF50] flex items-center justify-center">
                 <div className="text-center text-white/70 px-6">
                   <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/15">
                     <ImageIcon />
@@ -115,7 +115,7 @@ export const About = () => {
               { label: 'Location', value: 'Matatiele, EC' },
               { label: 'EMIS No', value: '200500585' },
             ].map((fact, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 text-center shadow border border-gray-100 border-b-4" style={{ borderBottomColor: '#1B5E20' }}>
+              <div key={i} className="bg-white rounded-2xl p-6 text-center shadow border border-gray-100 border-b-4" style={{ borderBottomColor: '#F9A825' }}>
                 <p className="text-2xl font-bold text-school-green">{fact.value}</p>
                 <p className="text-gray-500 font-medium mt-1">{fact.label}</p>
               </div>

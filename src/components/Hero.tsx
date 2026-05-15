@@ -54,7 +54,7 @@ export const Hero = () => {
       <div className="relative h-[400px] w-full overflow-hidden">
         <div className="absolute inset-0">
           <img src={slide.url} alt={slide.title} className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E20]/90 via-[#1B5E20]/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E20]/90 via-[#F9A825]/60 to-transparent" />
         </div>
 
         <div className="relative h-full max-w-6xl mx-auto px-4 flex items-center">
@@ -90,7 +90,7 @@ export const Hero = () => {
       {/* Logo overlapping */}
       <div className="relative -mt-10 flex justify-center z-10">
         <div className="relative">
-          <div className="absolute -inset-3 bg-[#F9A825] rounded-full opacity-25 blur-lg"></div>
+          <div className="absolute -inset-3 bg-[#1B5E20] rounded-full opacity-25 blur-lg"></div>
           <img 
             src="/assets/logo/telogo.png" 
             alt="Logo" 

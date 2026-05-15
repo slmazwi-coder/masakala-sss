@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --color-school-primary: #F9A825;
   --color-school-green: #1B5E20;
-  --color-school-gold: #F9A825;
   --color-school-dark-green: #0A2E0A;
   --color-school-light-green: #4CAF50;
   --color-school-white: #ffffff;
@@ -30,15 +30,15 @@
 
 .glass-nav {
   @apply bg-white/95 backdrop-blur-md border-b-2 sticky top-0 z-50 w-full;
-  border-bottom-color: #1B5E20;
+  border-bottom-color: #F9A825;
 }
 
-/* Custom button with green gradient */
+/* Custom button with yellow gradient */
 .btn-primary {
-  @apply bg-gradient-to-r from-[#1B5E20] to-[#4CAF50] text-white px-6 py-2.5 rounded-lg font-semibold hover:from-[#0A2E0A] hover:to-[#1B5E20] transition-all shadow-md hover:shadow-lg;
+  @apply bg-gradient-to-r from-[#F9A825] to-[#FFC107] text-white px-6 py-2.5 rounded-lg font-semibold hover:from-[#F57F17] hover:to-[#F9A825] transition-all shadow-md hover:shadow-lg;
 }
 
-/* Enhanced card with green accent */
+/* Enhanced card with yellow accent */
 .card {
   @apply bg-white p-6 rounded-xl shadow-sm border-t-2 border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
   border-top-color: #F9A825;
@@ -51,7 +51,7 @@
 
 .section-title::after {
   content: '';
-  @apply block w-16 h-1 bg-school-gold mx-auto mt-3 rounded-full;
+  @apply block w-16 h-1 bg-[#1B5E20] mx-auto mt-3 rounded-full;
 }
 
 /* Ensure pages stretch full width */
