@@ -49,7 +49,7 @@ export const Documents = () => {
                   className={cn(
                     "px-6 py-2 rounded-full font-semibold transition-all",
                     selectedGrade === grade 
-                      ? "bg-school-green text-white shadow-lg" 
+                      ? "bg-school-green text-[#C9A84C] shadow-lg" 
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                   )}
                 >
@@ -81,7 +81,7 @@ export const Documents = () => {
                 className="card group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-green-50 text-school-green rounded-xl group-hover:bg-school-green group-hover:text-white transition-colors">
+                  <div className="p-3 bg-green-50 text-school-green rounded-xl group-hover:bg-school-green group-hover:text-[#C9A84C] transition-colors">
                     <FileText size={24} />
                   </div>
                   <div className="flex-grow">

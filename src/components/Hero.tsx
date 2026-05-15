@@ -56,26 +56,26 @@ export const Hero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-white max-w-xl"
+            className="text-[#C9A84C] max-w-xl"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-2">{slide.title}</h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-6">{slide.subtitle}</p>
+            <p className="text-xl md:text-2xl text-[#C9A84C]/80 mb-6">{slide.subtitle}</p>
             <a href={slide.link} className="inline-flex items-center gap-2 bg-[#C9A84C] text-[#1B5E20] px-6 py-3 rounded-lg font-bold hover:bg-[#b8963e] transition">
               {slide.btn}
             </a>
           </motion.div>
         </div>
 
-        <button onClick={prev} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/20 text-white hover:bg-white/40 transition">
+        <button onClick={prev} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-[#C9A84C]/20 text-[#C9A84C] hover:bg-[#C9A84C]/40 transition">
           <ChevronLeft size={28} />
         </button>
-        <button onClick={next} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/20 text-white hover:bg-white/40 transition">
+        <button onClick={next} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-[#C9A84C]/20 text-[#C9A84C] hover:bg-[#C9A84C]/40 transition">
           <ChevronRight size={28} />
         </button>
 
         <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex gap-2">
           {slides.map((_, i) => (
-            <button key={i} onClick={() => setCurrentIndex(i)} className={`w-2 h-2 rounded-full transition-all ${i === currentIndex ? 'bg-white w-6' : 'bg-white/40'}`} />
+            <button key={i} onClick={() => setCurrentIndex(i)} className={`w-2 h-2 rounded-full transition-all ${i === currentIndex ? 'bg-[#C9A84C] w-6' : 'bg-[#C9A84C]/40'}`} />
           ))}
         </div>
       </div>

@@ -341,14 +341,14 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
           aria-label="School help desk chatbot"
         >
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 bg-school-green text-white shrink-0">
+          <div className="flex items-center justify-between px-4 py-3 bg-school-green text-[#C9A84C] shrink-0">
             <div className="flex items-center gap-2.5 min-w-0">
-              <div className="w-9 h-9 rounded-full bg-white/20 border border-white/30 flex items-center justify-center shrink-0">
+              <div className="w-9 h-9 rounded-full bg-[#C9A84C]/20 border border-[#C9A84C]/30 flex items-center justify-center shrink-0">
                 <Sparkles size={16} />
               </div>
               <div className="min-w-0">
                 <div className="font-bold text-sm leading-tight truncate">Masakala SSS Assistant</div>
-                <div className="flex items-center gap-1 text-[11px] text-white/70 mt-0.5">
+                <div className="flex items-center gap-1 text-[11px] text-[#C9A84C]/70 mt-0.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block animate-pulse" />
                   Online · AI-powered
                   {currentLang !== 'eng' && <span className="ml-1">· {LANG_LABELS[currentLang]}</span>}
@@ -361,7 +361,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
               <div className="relative" ref={langMenuRef}>
                 <button
                   onClick={() => setShowLangMenu((v) => !v)}
-                  className="flex items-center gap-1 px-2 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition-colors text-xs font-semibold"
+                  className="flex items-center gap-1 px-2 py-1 rounded-lg bg-[#C9A84C]/10 hover:bg-[#C9A84C]/20 transition-colors text-xs font-semibold"
                   aria-label="Change language"
                 >
                   <Globe size={11} />
@@ -377,7 +377,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                         onClick={() => { setCurrentLang(code); setShowLangMenu(false); }}
                         className={`w-full text-left px-3 py-2 text-xs transition-colors ${
                           currentLang === code
-                            ? 'bg-school-green text-white font-bold'
+                            ? 'bg-school-green text-[#C9A84C] font-bold'
                             : 'text-gray-700 hover:bg-gray-50'
                         }`}
                       >
@@ -390,7 +390,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
 
               <button
                 onClick={() => setOpen(false)}
-                className="p-1.5 rounded-lg hover:bg-white/10 transition-colors"
+                className="p-1.5 rounded-lg hover:bg-[#C9A84C]/10 transition-colors"
                 aria-label="Close chatbot"
               >
                 <X size={18} />
@@ -407,13 +407,13 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
               >
                 {m.role === 'bot' && (
                   <div className="w-6 h-6 rounded-full bg-school-green flex items-center justify-center shrink-0 mb-0.5">
-                    <Sparkles size={11} className="text-white" />
+                    <Sparkles size={11} className="text-[#C9A84C]" />
                   </div>
                 )}
                 <div
                   className={`max-w-[80%] rounded-2xl px-3 py-2.5 text-sm leading-relaxed shadow-sm whitespace-pre-wrap ${
                     m.role === 'user'
-                      ? 'bg-school-green text-white rounded-br-sm'
+                      ? 'bg-school-green text-[#C9A84C] rounded-br-sm'
                       : 'bg-white text-gray-800 border border-gray-100 rounded-bl-sm'
                   }`}
                 >
@@ -431,7 +431,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
             {isTyping && (
               <div className="flex items-end gap-1.5">
                 <div className="w-6 h-6 rounded-full bg-school-green flex items-center justify-center shrink-0">
-                  <Sparkles size={11} className="text-white" />
+                  <Sparkles size={11} className="text-[#C9A84C]" />
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl rounded-bl-sm px-4 py-3 shadow-sm flex gap-1 items-center">
                   <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
@@ -450,7 +450,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                     <button
                       key={q}
                       onClick={() => send(q)}
-                      className="text-[11px] px-2.5 py-1 rounded-full bg-white border border-school-green/25 text-school-green hover:bg-school-green hover:text-white transition-colors font-medium shadow-sm"
+                      className="text-[11px] px-2.5 py-1 rounded-full bg-white border border-school-green/25 text-school-green hover:bg-school-green hover:text-[#C9A84C] transition-colors font-medium shadow-sm"
                     >
                       {q}
                     </button>
@@ -480,7 +480,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
               <button
                 onClick={() => send()}
                 disabled={isTyping || !input.trim()}
-                className="bg-school-green hover:bg-school-green/90 text-white px-3 py-2 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center shrink-0"
+                className="bg-school-green hover:bg-school-green/90 text-[#C9A84C] px-3 py-2 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center shrink-0"
                 aria-label="Send message"
               >
                 <Send size={16} />
@@ -499,7 +499,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
         className="fixed z-50 bottom-4 right-3 sm:bottom-6 sm:right-6
           w-14 h-14 rounded-full shadow-xl
           bg-school-green hover:bg-school-green/90
-          text-white flex items-center justify-center
+          text-[#C9A84C] flex items-center justify-center
           transition-all duration-200 hover:scale-105 active:scale-95"
         aria-label={open ? 'Close chatbot' : 'Open chatbot'}
       >

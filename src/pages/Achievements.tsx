@@ -43,19 +43,19 @@ export const Achievements = () => {
           className="rounded-3xl overflow-hidden mb-12 shadow-2xl"
           style={{ background: '#1B5E20' }}
         >
-          <div className="p-8 sm:p-12 text-center text-white">
+          <div className="p-8 sm:p-12 text-center text-[#C9A84C]">
             <div className="flex justify-center mb-4">
-              <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-[#C9A84C]/20 flex items-center justify-center">
                 <Trophy size={36} style={{ color: '#C9A84C' }} />
               </div>
             </div>
-            <p className="text-white/70 uppercase tracking-widest text-sm font-bold mb-2">Class of 2023</p>
+            <p className="text-[#C9A84C]/70 uppercase tracking-widest text-sm font-bold mb-2">Class of 2023</p>
             <h2 className="text-4xl sm:text-5xl font-bold mb-2">82%</h2>
-            <p className="text-xl text-white/80 mb-1">Matric Pass Rate</p>
-            <p className="text-white/60 mb-6">Masakala SSS continues to strive for excellence</p>
+            <p className="text-xl text-[#C9A84C]/80 mb-1">Matric Pass Rate</p>
+            <p className="text-[#C9A84C]/60 mb-6">Masakala SSS continues to strive for excellence</p>
             <div className="flex justify-center gap-2 flex-wrap">
-              <span className="px-4 py-1.5 rounded-full bg-white/20 text-sm font-semibold">#ProgressBeginsHere</span>
-              <span className="px-4 py-1.5 rounded-full bg-white/20 text-sm font-semibold">#MasakalaSSS</span>
+              <span className="px-4 py-1.5 rounded-full bg-[#C9A84C]/20 text-sm font-semibold">#ProgressBeginsHere</span>
+              <span className="px-4 py-1.5 rounded-full bg-[#C9A84C]/20 text-sm font-semibold">#MasakalaSSS</span>
             </div>
           </div>
         </motion.div>

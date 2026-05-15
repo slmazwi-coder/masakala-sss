@@ -80,7 +80,7 @@ export const AdminLayout = () => {
                     to={tab.path}
                     className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                       isActive
-                        ? 'bg-school-green text-white'
+                        ? 'bg-school-green text-[#C9A84C]'
                         : 'text-gray-300 hover:bg-gray-700 hover:text-white'
                     }`}
                   >
@@ -109,7 +109,7 @@ export const AdminLayout = () => {
                 key={tab.path}
                 to={tab.path}
                 className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs whitespace-nowrap font-medium ${
-                  isActive ? 'bg-school-green text-white' : 'text-gray-400 bg-gray-700'
+                  isActive ? 'bg-school-green text-[#C9A84C]' : 'text-gray-400 bg-gray-700'
                 }`}
               >
                 <Icon size={14} />

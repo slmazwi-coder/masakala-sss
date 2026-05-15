@@ -34,7 +34,7 @@ const StaffCard = ({ member }: { member: StaffMember }) => (
       {member.image ? (
         <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
       ) : (
-        <div className="w-full h-full bg-[#1B5E20] flex items-center justify-center text-white font-bold text-2xl font-serif">
+        <div className="w-full h-full bg-[#1B5E20] flex items-center justify-center text-[#C9A84C] font-bold text-2xl font-serif">
           {member.name.split(' ').map(n => n[0]).join('')}
         </div>
       )}
@@ -68,16 +68,11 @@ export const Staff = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-green text-[#C9A84C] border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
             >
               {cat}
             </button>
           ))}
-        </div>
-
-        {/* Staff group photo */}
-        <div className="mb-10 rounded-2xl overflow-hidden shadow-lg max-h-72 border-4 border-[#C9A84C]">
-          <img src="/assets/staff/staff_group.png" alt="Masakala SSS staff" className="w-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
