@@ -319,7 +319,7 @@ const defaultAbout: AboutInfo = {
     'The school serves learners with dedicated educators across Grades 8–12.',
     'Parents and guardians are encouraged to engage with the school through meetings, events, and ongoing learner support.',
   ],
-  principalName: 'Ms. N. Magwaza',
+  principalName: 'School Principal',
   principalTitle: 'Principal',
   principalMessage: [
     'Welcome to Masakala Senior Secondary School. We are committed to providing a safe, inclusive and stimulating environment that enables every learner to reach their full potential.',

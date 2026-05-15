@@ -26,7 +26,7 @@ export const About = () => {
             <div className="space-y-4 text-gray-600 leading-relaxed text-base">
               <p>Masakala Senior Secondary School is a public no-fee secondary school located in Masakala A/A, Matatiele, Eastern Cape. Our school was established to serve the educational needs of our community.</p>
               <p>As a no-fee public school managed by the Eastern Cape Department of Education, we are committed to providing quality education to every learner. We offer the National Senior Certificate (NSC) CAPS curriculum across Grades 8–12, preparing our learners for successful futures.</p>
-              <p>Under the leadership of Principal Ms. N. Magwaza, the school is committed to excellence and the holistic development of every student.</p>
+              <p>Under the leadership of our Principal, the school is committed to excellence and the holistic development of every student.</p>
             </div>
           </motion.div>
 
@@ -76,10 +76,10 @@ export const About = () => {
               <div className="flex flex-col items-center justify-center bg-school-blue p-8 md:p-10">
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
                   <div className="w-full h-full flex items-center justify-center bg-[#133d58]">
-                    <img src="/assets/about/msprincipal.png" alt="Ms. N. Magwaza" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+                    <img src="/assets/about/msprincipal.png" alt="School Principal" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white text-center leading-tight">Ms. N. Magwaza</h3>
+                <h3 className="text-lg font-bold text-white text-center leading-tight">School Principal</h3>
                 <p className="text-sm font-semibold mt-1 text-center" style={{ color: '#C9A84C' }}>Principal</p>
                 <div className="w-10 h-0.5 mt-4 rounded-full opacity-60" style={{ backgroundColor: '#C9A84C' }} />
               </div>

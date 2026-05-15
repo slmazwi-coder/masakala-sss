@@ -26,7 +26,7 @@ export const Contact = () => {
                   <div>
                     <p className="font-semibold">Telephone / Mobile</p>
                     <p className="text-sm text-gray-500">+27 78 394 9015</p>
-                    <p className="text-xs text-gray-400">(Ms. N. Magwaza — Principal)</p>
+                    <p className="text-xs text-gray-400">(Principal)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-gray-700">

@@ -153,7 +153,7 @@ School details:
 - Phone: +27 78 394 9015
 - Email: Contact via Facebook page
 - Motto: "Reach for the Sky"
-- Principal: Ms. N. Magwaza
+- Principal: (To be confirmed)
 - Deputy Principal: Deputy Principal
 - School hours: Monday–Friday 08:00–14:30
 - Grades: Grade 8 to Grade 12
