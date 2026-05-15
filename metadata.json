@@ -1,0 +1,7 @@
+{
+  "name": "Masakala Senior Secondary School",
+  "description": "Masakala SSS is a public no-fee secondary school located in Masakala A/A, Matatiele, Eastern Cape. Motto: Reach for the Sky.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
