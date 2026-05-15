@@ -11,10 +11,10 @@ export const Contact = () => {
           {/* Contact details */}
           <div className="space-y-6">
             <div className="rounded-2xl p-6 border-2 border-blue-100 bg-blue-50">
-              <h2 className="text-lg font-bold text-school-blue mb-4">Get In Touch</h2>
+              <h2 className="text-lg font-bold text-school-green mb-4">Get In Touch</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3 text-gray-700">
-                  <MapPin className="shrink-0 mt-0.5 text-school-blue" size={20} />
+                  <MapPin className="shrink-0 mt-0.5 text-school-green" size={20} />
                   <div>
                     <p className="font-semibold">Physical Address</p>
                     <p className="text-sm text-gray-500">Masakala A/A, Matatiele, 4730</p>
@@ -22,7 +22,7 @@ export const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-gray-700">
-                  <Phone className="shrink-0 mt-0.5 text-school-blue" size={20} />
+                  <Phone className="shrink-0 mt-0.5 text-school-green" size={20} />
                   <div>
                     <p className="font-semibold">Telephone / Mobile</p>
                     <p className="text-sm text-gray-500">+27 78 394 9015</p>
@@ -30,14 +30,14 @@ export const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-gray-700">
-                  <Mail className="shrink-0 mt-0.5 text-school-blue" size={20} />
+                  <Mail className="shrink-0 mt-0.5 text-school-green" size={20} />
                   <div>
                     <p className="font-semibold">Email</p>
                     <p className="text-sm text-gray-500">Contact via Facebook page</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-gray-700">
-                  <Clock className="shrink-0 mt-0.5 text-school-blue" size={20} />
+                  <Clock className="shrink-0 mt-0.5 text-school-green" size={20} />
                   <div>
                     <p className="font-semibold">School Hours</p>
                     <p className="text-sm text-gray-500">Monday – Friday: 08:00 – 14:30</p>
@@ -48,7 +48,7 @@ export const Contact = () => {
             </div>
 
             <div className="rounded-2xl p-6 border-2 border-amber-100 bg-amber-50">
-              <h2 className="text-lg font-bold text-school-blue mb-2">2026 Admissions</h2>
+              <h2 className="text-lg font-bold text-school-green mb-2">2026 Admissions</h2>
               <p className="text-sm text-gray-600 mb-4">Applications for 2026 are open. Contact the school office or apply online.</p>
               <a href="/admissions" className="btn-primary inline-block text-sm">Apply Online</a>
             </div>

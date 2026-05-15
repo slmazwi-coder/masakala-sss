@@ -24,9 +24,9 @@ const ProgramCard: React.FC<{ prog: Activity }> = ({ prog }) => {
       whileHover={{ y: -8 }}
       className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden group"
     >
-      <div className="aspect-video bg-school-blue/10 flex items-center justify-center relative">
-        <Icon size={64} className="text-school-blue/40" />
-        <div className="absolute inset-0 bg-school-blue/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="aspect-video bg-school-green/10 flex items-center justify-center relative">
+        <Icon size={64} className="text-school-green/40" />
+        <div className="absolute inset-0 bg-school-green/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Icon size={48} className="text-white" />
         </div>
       </div>
@@ -67,8 +67,8 @@ export const ExtraCurricular = () => {
 
         {/* Sports */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-school-blue mb-8 flex items-center gap-3">
-            <Dumbbell className="text-school-blue" /> Sports
+          <h2 className="text-2xl font-bold text-school-green mb-8 flex items-center gap-3">
+            <Dumbbell className="text-school-green" /> Sports
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {sportsPrograms.map(prog => <ProgramCard key={prog.id} prog={prog} />)}
@@ -78,8 +78,8 @@ export const ExtraCurricular = () => {
         {/* Academic */}
         {academicPrograms.length > 0 && (
           <section className="mb-16">
-            <h2 className="text-2xl font-bold text-school-blue mb-8 flex items-center gap-3">
-              <BookOpen className="text-school-blue" /> Academic
+            <h2 className="text-2xl font-bold text-school-green mb-8 flex items-center gap-3">
+              <BookOpen className="text-school-green" /> Academic
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {academicPrograms.map(prog => <ProgramCard key={prog.id} prog={prog} />)}
@@ -90,8 +90,8 @@ export const ExtraCurricular = () => {
         {/* Culture */}
         {culturePrograms.length > 0 && (
           <section className="mb-16">
-            <h2 className="text-2xl font-bold text-school-blue mb-8 flex items-center gap-3">
-              <Music className="text-school-blue" /> Culture
+            <h2 className="text-2xl font-bold text-school-green mb-8 flex items-center gap-3">
+              <Music className="text-school-green" /> Culture
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {culturePrograms.map(prog => <ProgramCard key={prog.id} prog={prog} />)}
@@ -101,8 +101,8 @@ export const ExtraCurricular = () => {
 
         {/* Accolades */}
         <section>
-          <h2 className="text-2xl font-bold text-school-blue mb-8 flex items-center gap-3">
-            <Star className="text-school-blue" /> Accolades
+          <h2 className="text-2xl font-bold text-school-green mb-8 flex items-center gap-3">
+            <Star className="text-school-green" /> Accolades
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {accolades.map((a, i) => (
