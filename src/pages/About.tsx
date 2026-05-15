@@ -35,7 +35,7 @@ export const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: 0.05 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden shadow-2xl border-4 border-[#eef0f7] h-[280px] sm:h-[360px]"
+            className="rounded-2xl overflow-hidden shadow-2xl border-4 border-[#C9A84C] h-[280px] sm:h-[360px]"
           >
             {!campusFailed ? (
               <img
@@ -71,10 +71,10 @@ export const About = () => {
             <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#C9A84C' }} />
           </div>
 
-          <div className="bg-[#f5f5f0] rounded-3xl overflow-hidden shadow-lg border border-[#C9A84C]/30">
+          <div className="bg-[#f5f5f0] rounded-3xl overflow-hidden shadow-lg border-2 border-[#C9A84C]">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="flex flex-col items-center justify-center bg-school-green p-8 md:p-10">
-                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[#C9A84C] shadow-xl mb-5">
                   <div className="w-full h-full flex items-center justify-center bg-[#1B5E20]">
                     <img src="/assets/about/msprincipal.png" alt="School Principal" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                   </div>

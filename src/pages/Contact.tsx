@@ -10,7 +10,7 @@ export const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Contact details */}
           <div className="space-y-6">
-            <div className="rounded-2xl p-6 border-2 border-blue-100 bg-blue-50">
+            <div className="rounded-2xl p-6 border-2 border-[#C9A84C]/30 bg-[#1B5E20]/5">
               <h2 className="text-lg font-bold text-school-green mb-4">Get In Touch</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3 text-gray-700">
