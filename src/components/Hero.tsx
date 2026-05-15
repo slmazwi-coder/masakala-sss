@@ -4,32 +4,25 @@ import { ChevronLeft, ChevronRight, Calendar, ArrowRight, Play, Pause } from 'lu
 
 const slides = [
   { 
-    url: '/assets/hero/tehero1.png', 
+    url: '/assets/hero/mshero1.png', 
     title: 'Reach for the Sky',
     subtitle: 'Masakala Senior Secondary School',
     btn: 'Apply Now',
     link: '/admissions'
   },
   { 
-    url: '/assets/hero/tehero3.png', 
+    url: '/assets/hero/mshero2.png', 
     title: 'Quality Education',
     subtitle: 'CAPS Curriculum Grade 8-12',
     btn: 'View Subjects',
     link: '/subjects'
   },
   { 
-    url: '/assets/hero/tehero4.png', 
+    url: '/assets/hero/mshero3.png', 
     title: 'Dedicated Educators',
     subtitle: 'Committed to Excellence',
     btn: 'Meet Our Staff',
     link: '/staff'
-  },
-  { 
-    url: '/assets/hero/tehero5.png', 
-    title: 'Holistic Learning',
-    subtitle: 'Sports, Arts & Academic Excellence',
-    btn: 'Achievements',
-    link: '/achievements'
   },
 ];
 
