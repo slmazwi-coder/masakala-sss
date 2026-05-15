@@ -77,15 +77,15 @@ const StepBadge = ({
   <div className="flex items-center gap-2">
     <div
       className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-black border-2 transition-all
-        ${done   ? 'bg-school-green border-school-green text-white'
-        : active ? 'bg-white border-white text-school-green'
-        :          'bg-white/20 border-white/30 text-white/60'}`}
+        ${done   ? 'bg-school-green border-school-green text-[#C9A84C]'
+        : active ? 'bg-[#C9A84C] border-[#C9A84C] text-school-green'
+        :          'bg-[#C9A84C]/20 border-[#C9A84C]/30 text-[#C9A84C]/60'}`}
     >
       {done ? <CheckCircle size={14} /> : num}
     </div>
     <span
       className={`text-xs font-bold uppercase tracking-widest transition-all
-        ${active ? 'text-white' : done ? 'text-green-200' : 'text-white/50'}`}
+        ${active ? 'text-[#C9A84C]' : done ? 'text-[#C9A84C]/80' : 'text-[#C9A84C]/50'}`}
     >
       {label}
     </span>
@@ -291,24 +291,24 @@ export const Admissions = () => {
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
 
           {/* Header / step indicator */}
-          <div className="bg-school-green px-8 py-7 text-white">
+          <div className="bg-school-green px-8 py-7 text-[#C9A84C]">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-5">
               <div>
                 <h2 className="text-2xl font-bold">Application for Admission to School</h2>
-                <p className="text-white/70 text-sm mt-1">
+                <p className="text-[#C9A84C]/70 text-sm mt-1">
                   Masakala Senior Secondary School &nbsp;·&nbsp; Masakala A/A, Matatiele, Eastern Cape
                 </p>
               </div>
-              <div className="text-right text-sm text-white/70">
+              <div className="text-right text-sm text-[#C9A84C]/70">
                 <div>Tel: +27 78 394 9015</div>
                 <div>Step {step} of 3</div>
               </div>
             </div>
 
             {/* Progress bar */}
-            <div className="relative h-1.5 bg-white/20 rounded-full mb-5 overflow-hidden">
+            <div className="relative h-1.5 bg-[#C9A84C]/20 rounded-full mb-5 overflow-hidden">
               <motion.div
-                className="absolute inset-y-0 left-0 bg-white rounded-full"
+                className="absolute inset-y-0 left-0 bg-[#C9A84C] rounded-full"
                 animate={{ width: `${((step - 1) / 2) * 100 + 33.33}%` }}
                 transition={{ duration: 0.4 }}
               />
@@ -798,7 +798,7 @@ export const Admissions = () => {
                                     ? 'border-dashed border-red-300 bg-red-50/40'
                                     : 'border-dashed border-gray-300 bg-gray-50'}`}
                             >
-                              <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${file ? 'bg-school-green text-white' : 'bg-gray-200 text-gray-400'}`}>
+                              <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${file ? 'bg-school-green text-[#C9A84C]' : 'bg-gray-200 text-gray-400'}`}>
                                 {file ? <CheckCircle size={16} /> : <Upload size={16} />}
                               </div>
                               <div className="flex-1 min-w-0">
@@ -877,7 +877,7 @@ export const Admissions = () => {
                     <button
                       type="button"
                       onClick={goNext}
-                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-green text-white text-sm font-bold hover:bg-school-green/90 transition shadow"
+                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-green text-[#C9A84C] text-sm font-bold hover:bg-school-green/90 transition shadow"
                     >
                       Next <ChevronRight size={16} />
                     </button>
@@ -885,7 +885,7 @@ export const Admissions = () => {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-green text-white text-sm font-bold hover:bg-school-green/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow"
+                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-green text-[#C9A84C] text-sm font-bold hover:bg-school-green/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow"
                     >
                       {submitting ? (
                         <><span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" /> Submitting…</>

@@ -38,7 +38,7 @@ export const Navbar = () => {
               </div>
             </Link>
             <div className="hidden md:flex items-center gap-3 shrink-0">
-              <Link to="/student/login" className="px-4 py-2 rounded-lg text-sm font-bold text-[#1B5E20] border border-[#1B5E20]/50 hover:bg-[#1B5E20] hover:text-white transition">
+              <Link to="/student/login" className="px-4 py-2 rounded-lg text-sm font-bold text-[#1B5E20] border border-[#1B5E20]/50 hover:bg-[#1B5E20] hover:text-[#C9A84C] transition">
                 <User size={15} className="inline mr-1" /> Student Portal
               </Link>
             </div>
@@ -55,7 +55,7 @@ export const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center flex-wrap gap-x-1 gap-y-0 py-1">
             {navLinks.map((link) => (
-              <Link key={link.path} to={link.path} className={cn('px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap', location.pathname === link.path ? 'text-white bg-[#1B5E20] font-semibold' : 'text-gray-600 hover:text-[#1B5E20] hover:bg-gray-100')}>
+              <Link key={link.path} to={link.path} className={cn('px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap', location.pathname === link.path ? 'text-[#C9A84C] bg-[#1B5E20] font-semibold' : 'text-gray-600 hover:text-[#1B5E20] hover:bg-gray-100')}>
                 {link.name}
               </Link>
             ))}

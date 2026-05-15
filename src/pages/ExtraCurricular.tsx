@@ -27,7 +27,7 @@ const ProgramCard: React.FC<{ prog: Activity }> = ({ prog }) => {
       <div className="aspect-video bg-school-green/10 flex items-center justify-center relative">
         <Icon size={64} className="text-school-green/40" />
         <div className="absolute inset-0 bg-school-green/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <Icon size={48} className="text-white" />
+          <Icon size={48} className="text-[#C9A84C]" />
         </div>
       </div>
       <div className="p-6">
@@ -108,7 +108,7 @@ export const ExtraCurricular = () => {
             {accolades.map((a, i) => (
               <div key={i} className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ background: '#C9A84C' }}>
-                  <Trophy size={18} className="text-white" />
+                  <Trophy size={18} className="text-[#1B5E20]" />
                 </div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{a.title}</p>

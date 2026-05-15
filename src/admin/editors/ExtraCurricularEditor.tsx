@@ -69,7 +69,7 @@ export const ExtraCurricularEditor = () => {
             setEditing({ id: generateId(), name: '', description: '', category: categories[0], image: '' });
             setIsNew(true);
           }}
-          className="flex items-center gap-2 bg-school-green text-white px-4 py-2 rounded-xl font-medium hover:bg-green-800"
+          className="flex items-center gap-2 bg-school-green text-[#C9A84C] px-4 py-2 rounded-xl font-medium hover:bg-green-800"
         >
           <Plus size={18} /> Add item
         </button>
@@ -129,7 +129,7 @@ export const ExtraCurricularEditor = () => {
               <button
                 onClick={save}
                 disabled={isScanning}
-                className="flex items-center gap-2 bg-school-green text-white px-6 py-2 rounded-xl font-medium hover:bg-green-800 disabled:opacity-50"
+                className="flex items-center gap-2 bg-school-green text-[#C9A84C] px-6 py-2 rounded-xl font-medium hover:bg-green-800 disabled:opacity-50"
               >
                 {isScanning ? (
                   <>

@@ -44,7 +44,7 @@ export const Gallery = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === cat ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
+              className={`px-4 py-2 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === cat ? 'bg-school-green text-[#C9A84C] border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
             >
               {cat}
             </button>
@@ -65,7 +65,7 @@ export const Gallery = () => {
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end p-3">
                 <p className="text-white text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-tight">{img.caption}</p>
               </div>
-              <span className="absolute top-2 right-2 bg-school-green text-white text-xs px-2 py-0.5 rounded-full font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="absolute top-2 right-2 bg-school-green text-[#C9A84C] text-xs px-2 py-0.5 rounded-full font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                 {img.category}
               </span>
             </motion.div>

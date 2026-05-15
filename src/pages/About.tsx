@@ -46,12 +46,12 @@ export const About = () => {
               />
             ) : (
               <div className="w-full h-full bg-[#1B5E20] flex items-center justify-center">
-                <div className="text-center text-white/70 px-6">
-                  <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/15">
+                <div className="text-center text-[#C9A84C]/70 px-6">
+                  <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-[#C9A84C]/10 flex items-center justify-center border border-[#C9A84C]/15">
                     <ImageIcon />
                   </div>
                   <div className="font-semibold">Campus image</div>
-                  <div className="text-sm text-white/60 font-mono">public/assets/about/</div>
+                  <div className="text-sm text-[#C9A84C]/60 font-mono">public/assets/about/</div>
                 </div>
               </div>
             )}
@@ -79,7 +79,7 @@ export const About = () => {
                     <img src="/assets/about/msprincipal.png" alt="School Principal" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white text-center leading-tight">School Principal</h3>
+                <h3 className="text-lg font-bold text-[#C9A84C] text-center leading-tight">School Principal</h3>
                 <p className="text-sm font-semibold mt-1 text-center" style={{ color: '#C9A84C' }}>Principal</p>
                 <div className="w-10 h-0.5 mt-4 rounded-full opacity-60" style={{ backgroundColor: '#C9A84C' }} />
               </div>
