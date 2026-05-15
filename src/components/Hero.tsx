@@ -47,7 +47,7 @@ export const Hero = () => {
       <div className="relative h-[400px] w-full overflow-hidden">
         <div className="absolute inset-0">
           <img src={slide.url} alt={slide.title} className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E20]/90 via-[#1B5E20]/60 to-transparent" />
+          <div className="absolute inset-0 bg-[#1B5E20]/80" />
         </div>
 
         <div className="relative h-full max-w-6xl mx-auto px-4 flex items-center">
@@ -60,7 +60,7 @@ export const Hero = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-2">{slide.title}</h1>
             <p className="text-xl md:text-2xl text-white/80 mb-6">{slide.subtitle}</p>
-            <a href={slide.link} className="inline-flex items-center gap-2 bg-white text-[#1B5E20] px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+            <a href={slide.link} className="inline-flex items-center gap-2 bg-[#C9A84C] text-[#1B5E20] px-6 py-3 rounded-lg font-bold hover:bg-[#b8963e] transition">
               {slide.btn}
             </a>
           </motion.div>
@@ -83,11 +83,11 @@ export const Hero = () => {
       {/* Logo overlapping */}
       <div className="relative -mt-10 flex justify-center z-10">
         <div className="relative">
-          <div className="absolute -inset-3 bg-[#C9A84C] rounded-full opacity-25 blur-lg"></div>
+          <div className="absolute -inset-3 bg-[#C9A84C] rounded-full opacity-40 blur-lg"></div>
           <img 
             src="/assets/logo/mslogo.png" 
             alt="Logo" 
-            className="relative w-18 h-18 rounded-full border-3 border-white shadow-xl bg-white"
+            className="relative w-18 h-18 rounded-full border-4 border-[#C9A84C] shadow-xl bg-white"
           />
         </div>
       </div>

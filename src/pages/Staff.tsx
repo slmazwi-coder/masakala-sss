@@ -34,7 +34,7 @@ const StaffCard = ({ member }: { member: StaffMember }) => (
       {member.image ? (
         <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
       ) : (
-        <div className="w-full h-full bg-gradient-to-br from-[#1B5E20] to-[#C9A84C] flex items-center justify-center text-white font-bold text-2xl font-serif">
+        <div className="w-full h-full bg-[#1B5E20] flex items-center justify-center text-white font-bold text-2xl font-serif">
           {member.name.split(' ').map(n => n[0]).join('')}
         </div>
       )}
@@ -78,7 +78,7 @@ export const Staff = () => {
         {/* Staff group photo */}
         <div className="mb-10 rounded-2xl overflow-hidden shadow-lg max-h-72 relative">
           <img src="/assets/staff/staff_group.png" alt="Masakala SSS staff" className="w-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
-          <div className="absolute inset-0 bg-gradient-to-t from-school-green/60 to-transparent flex items-end p-6">
+          <div className="absolute inset-0 bg-school-green/50 flex items-end p-6">
             <p className="text-white font-bold text-lg">Our dedicated team of educators</p>
           </div>
         </div>

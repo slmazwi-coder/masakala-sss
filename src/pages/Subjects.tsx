@@ -96,7 +96,7 @@ export const Subjects = () => {
         </div>
 
         {/* Pass rate */}
-        <div className="mt-12 bg-gradient-to-r from-school-green to-[#2E7D32] rounded-3xl p-8 text-center text-white">
+        <div className="mt-12 bg-school-green rounded-3xl p-8 text-center text-white">
           <p className="text-white/70 uppercase tracking-widest text-sm font-bold mb-2">NSC Matric Pass Rate</p>
           <p className="text-5xl font-bold mb-1" style={{ color: '#C9A84C' }}>72.6%</p>
           <p className="text-white/70">Class of 2020 &middot; Up from 63.2% in 2019</p>

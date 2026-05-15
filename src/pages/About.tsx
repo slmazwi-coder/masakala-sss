@@ -45,7 +45,7 @@ export const About = () => {
                 onError={() => setCampusFailed(true)}
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-[#145218] via-[#1B5E20] to-[#2E7D32] flex items-center justify-center">
+              <div className="w-full h-full bg-[#1B5E20] flex items-center justify-center">
                 <div className="text-center text-white/70 px-6">
                   <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/15">
                     <ImageIcon />
@@ -71,7 +71,7 @@ export const About = () => {
             <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#C9A84C' }} />
           </div>
 
-          <div className="bg-[#f0f6fa] rounded-3xl overflow-hidden shadow-lg border border-[#d6e5ef]">
+          <div className="bg-[#f5f5f0] rounded-3xl overflow-hidden shadow-lg border border-[#C9A84C]/30">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="flex flex-col items-center justify-center bg-school-green p-8 md:p-10">
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
