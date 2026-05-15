@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-3">
               <img
-                src="/assets/logo/telogo.png"
+                src="/assets/logo/masakala_logo.png"
                 alt="Masakala SSS Logo"
                 className="h-14 w-14 shrink-0 rounded-lg shadow-md object-contain bg-white/10"
               />
