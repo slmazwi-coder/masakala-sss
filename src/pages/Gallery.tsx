@@ -44,7 +44,7 @@ export const Gallery = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === cat ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-blue-50'}`}
+              className={`px-4 py-2 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === cat ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
             >
               {cat}
             </button>

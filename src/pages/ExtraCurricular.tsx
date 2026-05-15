@@ -33,7 +33,7 @@ const ProgramCard: React.FC<{ prog: Activity }> = ({ prog }) => {
       <div className="p-6">
         <div className="flex items-center gap-2 mb-2">
           <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${
-            prog.category === 'Sport' ? 'bg-blue-100 text-blue-700' :
+            prog.category === 'Sport' ? 'bg-[#1B5E20]/10 text-school-green' :
             prog.category === 'Academic' ? 'bg-purple-100 text-purple-700' :
             'bg-orange-100 text-orange-700'
           }`}>{prog.category}</span>

@@ -427,9 +427,9 @@ export const Boarding = () => {
         <h1 className="section-title">Boarding Application</h1>
 
         {/* Info banner */}
-        <div className="mb-6 bg-blue-50 border border-blue-200 rounded-2xl p-4 flex gap-3">
-          <Info size={18} className="text-blue-500 shrink-0 mt-0.5" />
-          <div className="text-sm text-blue-800">
+        <div className="mb-6 bg-[#1B5E20]/5 border border-[#C9A84C]/30 rounded-2xl p-4 flex gap-3">
+          <Info size={18} className="text-school-green shrink-0 mt-0.5" />
+          <div className="text-sm text-gray-800">
             <strong>This application covers two forms:</strong><br />
             <span className="font-medium">HTL 02</span> – Application for Admission to a Hostel &nbsp;|&nbsp;
             <span className="font-medium">HTL 03</span> – Application for a Boarding Bursary (incl. Commissioner of Oaths declaration)
@@ -558,7 +558,7 @@ export const Boarding = () => {
                             <tr>
                               <th className="text-left px-3 py-2 bg-gray-100 text-xs font-bold text-gray-600 uppercase w-44">Field</th>
                               <th className="text-left px-3 py-2 bg-school-green/10 text-xs font-bold text-school-green uppercase">Father / Guardian / Responsible Person</th>
-                              <th className="text-left px-3 py-2 bg-blue-50 text-xs font-bold text-blue-600 uppercase">Mother / Relative</th>
+                              <th className="text-left px-3 py-2 bg-[#C9A84C]/10 text-xs font-bold text-[#C9A84C] uppercase">Mother / Relative</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -869,23 +869,23 @@ export const Boarding = () => {
                 {step === 3 && (
                   <>
                     {/* Download declaration */}
-                    <section className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-6">
+                    <section className="bg-[#1B5E20]/5 border-2 border-[#C9A84C]/30 rounded-2xl p-6">
                       <div className="flex gap-4 items-start">
-                        <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center shrink-0">
+                        <div className="w-12 h-12 bg-[#1B5E20]/10 text-school-green rounded-xl flex items-center justify-center shrink-0">
                           <Download size={22} />
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-black text-blue-900 text-base mb-1">
+                          <h4 className="font-black text-school-green text-base mb-1">
                             Step 1 — Download &amp; Sign the HTL 03 Declaration (Section 7)
                           </h4>
-                          <p className="text-sm text-blue-800 mb-4 leading-relaxed">
+                          <p className="text-sm text-gray-700 mb-4 leading-relaxed">
                             The HTL 03 bursary application requires a declaration sworn before a <strong>Commissioner of Oaths</strong> (e.g. at your nearest Police Station).
                             Download the form below, print it, take it to be signed and stamped, then upload it back here.
                           </p>
                           <button
                             type="button"
                             onClick={() => downloadDeclarationForm(guardian.fullNames || 'Guardian', learner.year)}
-                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-bold hover:bg-blue-700 transition shadow"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-school-green text-white text-sm font-bold hover:bg-[#145218] transition shadow"
                           >
                             <Download size={16} /> Download Declaration Form (HTL 03 Section 7)
                           </button>

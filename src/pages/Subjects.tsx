@@ -5,7 +5,7 @@ import { BookOpen, Calculator, Globe, Languages, FlaskConical, Briefcase, Palett
 const subjects = [
   {
     category: 'Mathematics & Science',
-    color: 'bg-blue-50 border-blue-200',
+    color: 'bg-[#1B5E20]/10 border-[#C9A84C]/30',
     iconColor: 'text-school-green',
     items: [
       { name: 'Mathematics', icon: Calculator, description: 'Mathematical reasoning, algebra, geometry, trigonometry and calculus for the National Senior Certificate.' },
@@ -69,7 +69,7 @@ export const Subjects = () => {
             <button
               key={s.category}
               onClick={() => setActiveCategory(s.category)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === s.category ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-blue-50'}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === s.category ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
             >
               {s.category}
             </button>

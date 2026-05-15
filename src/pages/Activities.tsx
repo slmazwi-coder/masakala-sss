@@ -57,7 +57,7 @@ export const Activities = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-blue-50 border border-blue-100 rounded-3xl p-6 sm:p-7">
+        <div className="mt-12 bg-[#1B5E20]/5 border border-[#C9A84C]/30 rounded-3xl p-6 sm:p-7">
           <div className="text-sm font-black uppercase tracking-widest text-school-green">More activities</div>
           <p className="text-gray-700 mt-2">
             The school may add more academic activities over time, such as quiz competitions, coding club, entrepreneurship club,

@@ -29,8 +29,8 @@ const staffData: StaffMember[] = [
 const categories = ['Leadership', 'Departmental Heads', 'Class Teachers', 'Support Staff'];
 
 const StaffCard = ({ member }: { member: StaffMember }) => (
-  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center p-6 text-center border border-[#d6e5ef] hover:-translate-y-1">
-    <div className="w-24 h-24 rounded-full bg-blue-50 border-4 border-[#b8d4e8] flex items-center justify-center mb-4 overflow-hidden">
+  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center p-6 text-center border border-[#C9A84C]/30 hover:-translate-y-1">
+    <div className="w-24 h-24 rounded-full bg-[#1B5E20] border-4 border-[#C9A84C] flex items-center justify-center mb-4 overflow-hidden">
       {member.image ? (
         <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
       ) : (
@@ -42,7 +42,7 @@ const StaffCard = ({ member }: { member: StaffMember }) => (
     <h3 className="text-sm font-bold text-school-green leading-tight">{member.name}</h3>
     <p className="text-xs font-semibold mt-1 text-school-green">{member.position}</p>
     {member.subject && (
-      <span className="mt-2 inline-block bg-blue-50 text-school-green text-xs font-medium px-3 py-1 rounded-full">
+      <span className="mt-2 inline-block bg-[#1B5E20]/10 text-school-green text-xs font-medium px-3 py-1 rounded-full">
         {member.subject}
       </span>
     )}
@@ -54,7 +54,7 @@ export const Staff = () => {
   const filtered = staffData.filter(m => m.category === activeCategory);
 
   return (
-    <div className="min-h-screen py-12 px-4" style={{ background: '#f0f6fa' }}>
+    <div className="min-h-screen py-12 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-extrabold tracking-tight mb-3 text-school-green">Our Staff</h1>
@@ -68,7 +68,7 @@ export const Staff = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-blue-50'}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
             >
               {cat}
             </button>
@@ -76,11 +76,8 @@ export const Staff = () => {
         </div>
 
         {/* Staff group photo */}
-        <div className="mb-10 rounded-2xl overflow-hidden shadow-lg max-h-72 relative">
+        <div className="mb-10 rounded-2xl overflow-hidden shadow-lg max-h-72 border-4 border-[#C9A84C]">
           <img src="/assets/staff/staff_group.png" alt="Masakala SSS staff" className="w-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
-          <div className="absolute inset-0 bg-school-green/50 flex items-end p-6">
-            <p className="text-white font-bold text-lg">Our dedicated team of educators</p>
-          </div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
