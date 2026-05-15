@@ -34,15 +34,15 @@ const StaffCard = ({ member }: { member: StaffMember }) => (
       {member.image ? (
         <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
       ) : (
-        <div className="w-full h-full bg-gradient-to-br from-[#800000] to-[#DC143C] flex items-center justify-center text-white font-bold text-2xl font-serif">
+        <div className="w-full h-full bg-gradient-to-br from-[#1B5E20] to-[#C9A84C] flex items-center justify-center text-white font-bold text-2xl font-serif">
           {member.name.split(' ').map(n => n[0]).join('')}
         </div>
       )}
     </div>
-    <h3 className="text-sm font-bold text-school-blue leading-tight">{member.name}</h3>
-    <p className="text-xs font-semibold mt-1 text-school-blue">{member.position}</p>
+    <h3 className="text-sm font-bold text-school-green leading-tight">{member.name}</h3>
+    <p className="text-xs font-semibold mt-1 text-school-green">{member.position}</p>
     {member.subject && (
-      <span className="mt-2 inline-block bg-blue-50 text-school-blue text-xs font-medium px-3 py-1 rounded-full">
+      <span className="mt-2 inline-block bg-blue-50 text-school-green text-xs font-medium px-3 py-1 rounded-full">
         {member.subject}
       </span>
     )}
@@ -57,7 +57,7 @@ export const Staff = () => {
     <div className="min-h-screen py-12 px-4" style={{ background: '#f0f6fa' }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-extrabold tracking-tight mb-3 text-school-blue">Our Staff</h1>
+          <h1 className="text-4xl font-extrabold tracking-tight mb-3 text-school-green">Our Staff</h1>
           <p className="text-gray-500 max-w-xl mx-auto">Meet the dedicated educators and support staff who make Masakala SSS thrive every day.</p>
           <p className="text-sm text-gray-400 mt-2 italic">Staff details will be updated by school administration.</p>
         </div>
@@ -68,7 +68,7 @@ export const Staff = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-blue text-white border-school-blue' : 'bg-white text-school-blue border-school-blue hover:bg-blue-50'}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-blue-50'}`}
             >
               {cat}
             </button>
@@ -78,7 +78,7 @@ export const Staff = () => {
         {/* Staff group photo */}
         <div className="mb-10 rounded-2xl overflow-hidden shadow-lg max-h-72 relative">
           <img src="/assets/staff/staff_group.png" alt="Masakala SSS staff" className="w-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
-          <div className="absolute inset-0 bg-gradient-to-t from-school-blue/60 to-transparent flex items-end p-6">
+          <div className="absolute inset-0 bg-gradient-to-t from-school-green/60 to-transparent flex items-end p-6">
             <p className="text-white font-bold text-lg">Our dedicated team of educators</p>
           </div>
         </div>

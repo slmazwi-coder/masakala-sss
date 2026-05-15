@@ -21,7 +21,7 @@ export const About = () => {
             className="flex flex-col justify-center"
           >
             <div className="border-l-4 pl-5 mb-6" style={{ borderColor: '#C9A84C' }}>
-              <h2 className="text-2xl font-bold text-school-blue">Our School</h2>
+              <h2 className="text-2xl font-bold text-school-green">Our School</h2>
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed text-base">
               <p>Masakala Senior Secondary School is a public no-fee secondary school located in Masakala A/A, Matatiele, Eastern Cape. Our school was established to serve the educational needs of our community.</p>
@@ -45,7 +45,7 @@ export const About = () => {
                 onError={() => setCampusFailed(true)}
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-[#0D2137] via-[#1A5276] to-[#2E86AB] flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-[#145218] via-[#1B5E20] to-[#2E7D32] flex items-center justify-center">
                 <div className="text-center text-white/70 px-6">
                   <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/15">
                     <ImageIcon />
@@ -67,15 +67,15 @@ export const About = () => {
           className="mb-16 sm:mb-24"
         >
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-school-blue mb-2">Principal's Message</h2>
+            <h2 className="text-3xl font-extrabold text-school-green mb-2">Principal's Message</h2>
             <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#C9A84C' }} />
           </div>
 
           <div className="bg-[#f0f6fa] rounded-3xl overflow-hidden shadow-lg border border-[#d6e5ef]">
             <div className="grid grid-cols-1 md:grid-cols-3">
-              <div className="flex flex-col items-center justify-center bg-school-blue p-8 md:p-10">
+              <div className="flex flex-col items-center justify-center bg-school-green p-8 md:p-10">
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
-                  <div className="w-full h-full flex items-center justify-center bg-[#133d58]">
+                  <div className="w-full h-full flex items-center justify-center bg-[#1B5E20]">
                     <img src="/assets/about/msprincipal.png" alt="School Principal" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export const About = () => {
           viewport={{ once: true }}
         >
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-school-blue mb-2">Key Facts</h2>
+            <h2 className="text-3xl font-extrabold text-school-green mb-2">Key Facts</h2>
             <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#C9A84C' }} />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -115,8 +115,8 @@ export const About = () => {
               { label: 'Location', value: 'Masakala A/A, Matatiele' },
               { label: 'Established', value: '2018' },
             ].map((fact, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 text-center shadow border border-gray-100 border-b-4" style={{ borderBottomColor: '#1A5276' }}>
-                <p className="text-2xl font-bold text-school-blue">{fact.value}</p>
+              <div key={i} className="bg-white rounded-2xl p-6 text-center shadow border border-gray-100 border-b-4" style={{ borderBottomColor: '#1B5E20' }}>
+                <p className="text-2xl font-bold text-school-green">{fact.value}</p>
                 <p className="text-gray-500 font-medium mt-1">{fact.label}</p>
               </div>
             ))}

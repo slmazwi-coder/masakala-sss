@@ -47,7 +47,7 @@ export const StudentLogin = () => {
         </button>
 
         <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-school-blue rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-school-green rounded-full flex items-center justify-center mx-auto mb-4">
             <Lock className="text-white" size={28} />
           </div>
           <h1 className="text-2xl font-bold text-white">Student Portal</h1>
@@ -63,7 +63,7 @@ export const StudentLogin = () => {
                 setStudentNumber(e.target.value);
                 setError('');
               }}
-              className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-school-blue focus:border-transparent"
+              className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-school-green focus:border-transparent"
               placeholder="e.g. 2027-000123"
               autoFocus
             />
@@ -79,7 +79,7 @@ export const StudentLogin = () => {
                   setIdNumber(e.target.value);
                   setError('');
                 }}
-                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-school-blue focus:border-transparent"
+                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-school-green focus:border-transparent"
                 placeholder="Enter your ID number"
               />
               <button
@@ -97,7 +97,7 @@ export const StudentLogin = () => {
 
           <button
             type="submit"
-            className="w-full bg-school-blue text-white py-3 rounded-xl font-bold hover:bg-[#133d58] transition-colors"
+            className="w-full bg-school-green text-white py-3 rounded-xl font-bold hover:bg-[#1B5E20] transition-colors"
           >
             Sign In
           </button>

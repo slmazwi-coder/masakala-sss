@@ -341,7 +341,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
           aria-label="School help desk chatbot"
         >
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 bg-school-blue text-white shrink-0">
+          <div className="flex items-center justify-between px-4 py-3 bg-school-green text-white shrink-0">
             <div className="flex items-center gap-2.5 min-w-0">
               <div className="w-9 h-9 rounded-full bg-white/20 border border-white/30 flex items-center justify-center shrink-0">
                 <Sparkles size={16} />
@@ -377,7 +377,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                         onClick={() => { setCurrentLang(code); setShowLangMenu(false); }}
                         className={`w-full text-left px-3 py-2 text-xs transition-colors ${
                           currentLang === code
-                            ? 'bg-school-blue text-white font-bold'
+                            ? 'bg-school-green text-white font-bold'
                             : 'text-gray-700 hover:bg-gray-50'
                         }`}
                       >
@@ -406,14 +406,14 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                 className={`flex items-end gap-1.5 ${m.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}
               >
                 {m.role === 'bot' && (
-                  <div className="w-6 h-6 rounded-full bg-school-blue flex items-center justify-center shrink-0 mb-0.5">
+                  <div className="w-6 h-6 rounded-full bg-school-green flex items-center justify-center shrink-0 mb-0.5">
                     <Sparkles size={11} className="text-white" />
                   </div>
                 )}
                 <div
                   className={`max-w-[80%] rounded-2xl px-3 py-2.5 text-sm leading-relaxed shadow-sm whitespace-pre-wrap ${
                     m.role === 'user'
-                      ? 'bg-school-blue text-white rounded-br-sm'
+                      ? 'bg-school-green text-white rounded-br-sm'
                       : 'bg-white text-gray-800 border border-gray-100 rounded-bl-sm'
                   }`}
                 >
@@ -430,7 +430,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
             {/* Typing indicator */}
             {isTyping && (
               <div className="flex items-end gap-1.5">
-                <div className="w-6 h-6 rounded-full bg-school-blue flex items-center justify-center shrink-0">
+                <div className="w-6 h-6 rounded-full bg-school-green flex items-center justify-center shrink-0">
                   <Sparkles size={11} className="text-white" />
                 </div>
                 <div className="bg-white border border-gray-100 rounded-2xl rounded-bl-sm px-4 py-3 shadow-sm flex gap-1 items-center">
@@ -450,7 +450,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                     <button
                       key={q}
                       onClick={() => send(q)}
-                      className="text-[11px] px-2.5 py-1 rounded-full bg-white border border-school-blue/25 text-school-blue hover:bg-school-blue hover:text-white transition-colors font-medium shadow-sm"
+                      className="text-[11px] px-2.5 py-1 rounded-full bg-white border border-school-green/25 text-school-green hover:bg-school-green hover:text-white transition-colors font-medium shadow-sm"
                     >
                       {q}
                     </button>
@@ -472,7 +472,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
                 }}
-                className="flex-1 rounded-xl border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-school-blue/20 focus:border-school-blue/40 transition-all bg-gray-50 placeholder:text-gray-400"
+                className="flex-1 rounded-xl border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-school-green/20 focus:border-school-green/40 transition-all bg-gray-50 placeholder:text-gray-400"
                 placeholder="Ask me anything about the school…"
                 aria-label="Chat input"
                 disabled={isTyping}
@@ -480,7 +480,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
               <button
                 onClick={() => send()}
                 disabled={isTyping || !input.trim()}
-                className="bg-school-blue hover:bg-school-blue/90 text-white px-3 py-2 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center shrink-0"
+                className="bg-school-green hover:bg-school-green/90 text-white px-3 py-2 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center shrink-0"
                 aria-label="Send message"
               >
                 <Send size={16} />
@@ -498,7 +498,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
         onClick={() => setOpen((v) => !v)}
         className="fixed z-50 bottom-4 right-3 sm:bottom-6 sm:right-6
           w-14 h-14 rounded-full shadow-xl
-          bg-school-blue hover:bg-school-blue/90
+          bg-school-green hover:bg-school-green/90
           text-white flex items-center justify-center
           transition-all duration-200 hover:scale-105 active:scale-95"
         aria-label={open ? 'Close chatbot' : 'Open chatbot'}

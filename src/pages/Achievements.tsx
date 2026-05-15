@@ -41,12 +41,12 @@ export const Achievements = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="rounded-3xl overflow-hidden mb-12 shadow-2xl"
-          style={{ background: 'linear-gradient(135deg, #800000 0%, #5c0000 100%)' }}
+          style={{ background: 'linear-gradient(135deg, #1B5E20 0%, #145218 100%)' }}
         >
           <div className="p-8 sm:p-12 text-center text-white">
             <div className="flex justify-center mb-4">
               <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
-                <Trophy size={36} style={{ color: '#DC143C' }} />
+                <Trophy size={36} style={{ color: '#C9A84C' }} />
               </div>
             </div>
             <p className="text-white/70 uppercase tracking-widest text-sm font-bold mb-2">Class of 2023</p>
@@ -69,15 +69,15 @@ export const Achievements = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className={`rounded-2xl p-6 border-2 ${a.highlight ? 'border-[#800000] bg-red-50' : 'border-gray-100 bg-white'} shadow-sm hover:shadow-md transition-shadow`}
+              className={`rounded-2xl p-6 border-2 ${a.highlight ? 'border-[#1B5E20] bg-green-50' : 'border-gray-100 bg-white'} shadow-sm hover:shadow-md transition-shadow`}
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-xl bg-[#800000]/10 text-[#800000] shrink-0">
+                <div className="p-3 rounded-xl bg-[#1B5E20]/10 text-[#1B5E20] shrink-0">
                   <a.icon size={24} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-xs font-bold text-[#800000] uppercase tracking-widest">{a.year}</span>
+                    <span className="text-xs font-bold text-[#1B5E20] uppercase tracking-widest">{a.year}</span>
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{a.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{a.description}</p>
