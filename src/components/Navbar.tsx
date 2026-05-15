@@ -27,7 +27,7 @@ export const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-1">
               <img
-                src="/assets/logo/masakala_logo.png"
+                src="/assets/logo/mslogo.png"
                 alt="Masakala SSS Logo"
                 className="h-12 w-12 shrink-0 rounded-lg shadow-md object-contain bg-white/10"
               />
