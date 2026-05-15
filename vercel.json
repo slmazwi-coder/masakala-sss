@@ -1,7 +1,10 @@
 {
-  "rewrites": [
+  "buildCommand": "npm ci && npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
+  "routes": [
     {
-      "source": "/(.*)",
+      "src": "/(.*)",
       "destination": "/index.html"
     }
   ]
