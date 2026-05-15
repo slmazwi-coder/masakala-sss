@@ -4,7 +4,7 @@ import { Phone, MapPin, Mail } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#F9A825] text-white pt-10 pb-6 w-full">
+    <footer className="bg-[#800000] text-white pt-10 pb-6 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
 
@@ -18,7 +18,7 @@ export const Footer = () => {
               />
               <div>
                 <h3 className="text-base font-bold leading-tight">Masakala Senior Secondary School</h3>
-                <p className="text-sm italic mt-0.5 text-white/70">"Reach for the Sky"</p>
+                <p className="text-sm italic mt-0.5 text-white/70">"Progress Begins Here"</p>
               </div>
             </div>
           </div>
@@ -29,11 +29,11 @@ export const Footer = () => {
             <ul className="space-y-3 text-white/80 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="shrink-0 mt-0.5" size={16} />
-                <span>Masakala A/A, Matatiele, 4730</span>
+                <span>6902 Runnerveld Road, Shayamoya, Kokstad</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="shrink-0" />
-                <span>+27 78 394 9015</span>
+                <span>+27 82 611 7032</span>
               </li>
             </ul>
           </div>
@@ -52,7 +52,7 @@ export const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-white/10 pt-4 text-center text-sm text-white/50">
-          © 2026 Masakala Senior Secondary School. All rights reserved. EMIS No: 200500585
+          © 2026 Masakala Senior Secondary School. All rights reserved.
         </div>
       </div>
     </footer>

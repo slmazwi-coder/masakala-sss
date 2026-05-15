@@ -134,7 +134,7 @@ async function translateText(text: string, src: SupportedLang, tgt: SupportedLan
 }
 
 // ── Claude AI (Anthropic) ────────────────────────────────────────────────────
-const SYSTEM_PROMPT = `You are a warm, knowledgeable and friendly assistant for Thembalethu Senior Secondary School in Kokstad, KwaZulu-Natal, South Africa.
+const SYSTEM_PROMPT = `You are a warm, knowledgeable and friendly assistant for Masakala Senior Secondary School in Kokstad, KwaZulu-Natal, South Africa.
 
 You help parents, learners, guardians and community members with anything about the school:
 - Admissions and application process
@@ -148,7 +148,7 @@ You help parents, learners, guardians and community members with anything about 
 - General encouragement and guidance for parents and learners
 
 School details:
-- Name: Thembalethu Senior Secondary School
+- Name: Masakala Senior Secondary School
 - Location: 4 School Lane, Kokstad, 4700, KwaZulu-Natal
 - Phone: 039 727 3662
 - Email: mcsss@telkomsa.net
@@ -210,7 +210,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
       id: uid(),
       role: 'bot',
       createdAt: Date.now(),
-      text: "👋 Hello! Let me help you! Whether it's admissions, fees, results, activities or anything else about Thembalethu SSS — just ask and I'll be happy to assist.",
+      text: "👋 Hello! Let me help you! Whether it's admissions, fees, results, activities or anything else about Masakala SSS — just ask and I'll be happy to assist.",
     },
   ]);
 
@@ -308,7 +308,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
         {
           id: uid(),
           role: 'bot',
-          text: 'Something went wrong. Please contact the school at 039 727 3662 or message us on Facebook: Thembalethu SSS.',
+          text: 'Something went wrong. Please contact the school at 039 727 3662 or message us on Facebook: Masakala SSS.',
           createdAt: Date.now(),
         },
       ]);
@@ -347,7 +347,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                 <Sparkles size={16} />
               </div>
               <div className="min-w-0">
-                <div className="font-bold text-sm leading-tight truncate">Thembalethu SSS Assistant</div>
+                <div className="font-bold text-sm leading-tight truncate">Masakala SSS Assistant</div>
                 <div className="flex items-center gap-1 text-[11px] text-white/70 mt-0.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block animate-pulse" />
                   Online · AI-powered

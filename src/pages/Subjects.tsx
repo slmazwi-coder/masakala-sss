@@ -6,7 +6,7 @@ const subjects = [
   {
     category: 'Mathematics & Science',
     color: 'bg-blue-50 border-blue-200',
-    iconColor: 'text-school-green',
+    iconColor: 'text-school-blue',
     items: [
       { name: 'Mathematics', icon: Calculator, description: 'Mathematical reasoning, algebra, geometry, trigonometry and calculus for the National Senior Certificate.' },
       { name: 'Mathematical Literacy', icon: Calculator, description: 'Practical mathematical skills applied to everyday life situations and real-world problem solving.' },
@@ -69,7 +69,7 @@ export const Subjects = () => {
             <button
               key={s.category}
               onClick={() => setActiveCategory(s.category)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === s.category ? 'bg-school-green text-white border-school-green' : 'bg-white text-school-green border-school-green hover:bg-blue-50'}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === s.category ? 'bg-school-blue text-white border-school-blue' : 'bg-white text-school-blue border-school-blue hover:bg-blue-50'}`}
             >
               {s.category}
             </button>
@@ -96,7 +96,7 @@ export const Subjects = () => {
         </div>
 
         {/* Pass rate */}
-        <div className="mt-12 bg-gradient-to-r from-school-green to-[#2E86AB] rounded-3xl p-8 text-center text-white">
+        <div className="mt-12 bg-gradient-to-r from-school-blue to-[#2E86AB] rounded-3xl p-8 text-center text-white">
           <p className="text-white/70 uppercase tracking-widest text-sm font-bold mb-2">NSC Matric Pass Rate</p>
           <p className="text-5xl font-bold mb-1" style={{ color: '#C9A84C' }}>72.6%</p>
           <p className="text-white/70">Class of 2020 &middot; Up from 63.2% in 2019</p>

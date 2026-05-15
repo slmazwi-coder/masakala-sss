@@ -60,13 +60,13 @@ const Field: React.FC<{ label: string; required?: boolean; children: React.React
 );
 
 const inp =
-  'border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-school-green/40 focus:border-school-green transition w-full bg-white';
+  'border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-school-blue/40 focus:border-school-blue transition w-full bg-white';
 
 const sel = inp + ' cursor-pointer';
 
 const SectionHeading = ({ icon, title }: { icon: React.ReactNode; title: string }) => (
   <div className="flex items-center gap-2 pb-2 border-b border-gray-200 mb-4">
-    <span className="text-school-green">{icon}</span>
+    <span className="text-school-blue">{icon}</span>
     <h3 className="text-sm font-black uppercase tracking-widest text-gray-700">{title}</h3>
   </div>
 );
@@ -77,8 +77,8 @@ const StepBadge = ({
   <div className="flex items-center gap-2">
     <div
       className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-black border-2 transition-all
-        ${done   ? 'bg-school-green border-school-green text-white'
-        : active ? 'bg-white border-white text-school-green'
+        ${done   ? 'bg-school-blue border-school-blue text-white'
+        : active ? 'bg-white border-white text-school-blue'
         :          'bg-white/20 border-white/30 text-white/60'}`}
     >
       {done ? <CheckCircle size={14} /> : num}
@@ -107,7 +107,7 @@ export const Admissions = () => {
   const [learner, setL] = useState({
     surname: '', firstName: '', initials: '', otherNames: '',
     dob: '', gender: '', identificationNumber: '', citizenship: '', race: '',
-    grade: '', year: '2027',
+    grade: '', year: '2026',
     highestGradePassed: '', yearWhenGradeWasPassed: '', accessionNo: '',
     countryOfResidence: '', province: '', physicalAddress: '', citySuburb: '', postalCode: '',
     homeLanguage: '', preferredLanguageOfInstruction: '',
@@ -268,7 +268,7 @@ export const Admissions = () => {
           transition={{ duration: 0.25 }}
           className="text-center p-10 sm:p-12 bg-white rounded-3xl shadow-2xl max-w-md"
         >
-          <div className="w-20 h-20 bg-green-100 text-school-green rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-20 h-20 bg-green-100 text-school-blue rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle size={48} />
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Application Submitted!</h2>
@@ -291,7 +291,7 @@ export const Admissions = () => {
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
 
           {/* Header / step indicator */}
-          <div className="bg-school-green px-8 py-7 text-white">
+          <div className="bg-school-blue px-8 py-7 text-white">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-5">
               <div>
                 <h2 className="text-2xl font-bold">Application for Admission to School</h2>
@@ -350,7 +350,7 @@ export const Admissions = () => {
 
                         <Field label="Year">
                           <select className={sel} value={learner.year} onChange={e => patchL('year', e.target.value)}>
-                            {['2025','2027','2027','2028'].map(y => <option key={y}>{y}</option>)}
+                            {['2025','2026','2026','2028'].map(y => <option key={y}>{y}</option>)}
                           </select>
                         </Field>
 
@@ -701,7 +701,7 @@ export const Admissions = () => {
                       <button
                         type="button"
                         onClick={() => setHasSecondParent(p => !p)}
-                        className="text-sm font-semibold text-school-green underline underline-offset-2"
+                        className="text-sm font-semibold text-school-blue underline underline-offset-2"
                       >
                         {hasSecondParent ? '− Remove second parent/guardian' : '+ Add second parent/guardian'}
                       </button>
@@ -793,12 +793,12 @@ export const Admissions = () => {
                               key={field.key}
                               className={`relative flex items-center gap-3 p-3 rounded-xl border-2 transition
                                 ${file
-                                  ? 'border-school-green bg-green-50'
+                                  ? 'border-school-blue bg-green-50'
                                   : field.required
                                     ? 'border-dashed border-red-300 bg-red-50/40'
                                     : 'border-dashed border-gray-300 bg-gray-50'}`}
                             >
-                              <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${file ? 'bg-school-green text-white' : 'bg-gray-200 text-gray-400'}`}>
+                              <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${file ? 'bg-school-blue text-white' : 'bg-gray-200 text-gray-400'}`}>
                                 {file ? <CheckCircle size={16} /> : <Upload size={16} />}
                               </div>
                               <div className="flex-1 min-w-0">
@@ -806,10 +806,10 @@ export const Admissions = () => {
                                   {field.label}
                                   {field.required && <span className="text-red-500 ml-1">*</span>}
                                 </div>
-                                {file && <div className="text-xs text-school-green truncate mt-0.5">{file.name}</div>}
+                                {file && <div className="text-xs text-school-blue truncate mt-0.5">{file.name}</div>}
                                 {!file && <div className="text-xs text-gray-400 mt-0.5">No file chosen</div>}
                               </div>
-                              <label className="shrink-0 text-xs font-bold text-school-green cursor-pointer hover:underline">
+                              <label className="shrink-0 text-xs font-bold text-school-blue cursor-pointer hover:underline">
                                 {file ? 'Change' : 'Upload'}
                                 <input
                                   type="file"
@@ -840,7 +840,7 @@ export const Admissions = () => {
                           type="checkbox"
                           checked={disclaimer}
                           onChange={e => setDisclaimer(e.target.checked)}
-                          className="mt-0.5 w-4 h-4 accent-school-green cursor-pointer"
+                          className="mt-0.5 w-4 h-4 accent-school-blue cursor-pointer"
                         />
                         <span className="text-sm text-gray-700 group-hover:text-gray-900">
                           I, the parent/guardian, confirm that the information provided is accurate and correct, and I agree to the above declaration.
@@ -877,7 +877,7 @@ export const Admissions = () => {
                     <button
                       type="button"
                       onClick={goNext}
-                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-green text-white text-sm font-bold hover:bg-school-green/90 transition shadow"
+                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-blue text-white text-sm font-bold hover:bg-school-blue/90 transition shadow"
                     >
                       Next <ChevronRight size={16} />
                     </button>
@@ -885,7 +885,7 @@ export const Admissions = () => {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-green text-white text-sm font-bold hover:bg-school-green/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow"
+                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-blue text-white text-sm font-bold hover:bg-school-blue/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow"
                     >
                       {submitting ? (
                         <><span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" /> Submitting…</>

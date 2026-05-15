@@ -20,13 +20,13 @@ export const About = () => {
             viewport={{ once: true }}
             className="flex flex-col justify-center"
           >
-            <div className="border-l-4 pl-5 mb-6" style={{ borderColor: '#F9A825' }}>
-              <h2 className="text-2xl font-bold text-school-green">Our School</h2>
+            <div className="border-l-4 pl-5 mb-6" style={{ borderColor: '#C9A84C' }}>
+              <h2 className="text-2xl font-bold text-school-blue">Our School</h2>
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed text-base">
-              <p>Masakala Senior Secondary School is a public no-fee secondary school located in Masakala A/A, Matatiele, Eastern Cape. Our school serves the educational needs of our community in the rural villages of Matatiele.</p>
-              <p>As a no-fee public school managed by the Eastern Cape Department of Education, we are committed to providing quality education to every learner. We offer the National Senior Certificate (NSC) CAPS curriculum across Grades 8–12, preparing our learners for successful futures.</p>
-              <p>Under the leadership of the Principal, the school is committed to excellence and the holistic development of every student in the Matatiele District. Our motto "Reach for the Sky" inspires us to aim highest in all we do.</p>
+              <p>Masakala Senior Secondary School is a public no-fee secondary school located in Shayamoya, Kokstad, KwaZulu-Natal. Our school was established in January 2018 to serve the educational needs of our community.</p>
+              <p>As a no-fee public school managed by the KwaZulu-Natal Department of Education, we are committed to providing quality education to every learner. We offer the National Senior Certificate (NSC) CAPS curriculum across Grades 8–12, preparing our learners for successful futures.</p>
+              <p>Under the leadership of Principal Ms. N. Magwaza, the school serves approximately 1,187 learners with a dedicated team of 29 educators, committed to excellence and the holistic development of every student in the Harry Gwala District.</p>
             </div>
           </motion.div>
 
@@ -39,13 +39,13 @@ export const About = () => {
           >
             {!campusFailed ? (
               <img
-                src="/assets/about/tecampus.png"
+                src="/assets/about/mscampus.png"
                 alt="Masakala SSS campus"
                 className="w-full h-full object-cover"
                 onError={() => setCampusFailed(true)}
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-[#0A2E0A] via-[#F9A825] to-[#4CAF50] flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-[#0D2137] via-[#1A5276] to-[#2E86AB] flex items-center justify-center">
                 <div className="text-center text-white/70 px-6">
                   <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/15">
                     <ImageIcon />
@@ -67,31 +67,31 @@ export const About = () => {
           className="mb-16 sm:mb-24"
         >
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-school-green mb-2">Principal's Message</h2>
-            <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#F9A825' }} />
+            <h2 className="text-3xl font-extrabold text-school-blue mb-2">Principal's Message</h2>
+            <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#C9A84C' }} />
           </div>
 
           <div className="bg-[#f0f6fa] rounded-3xl overflow-hidden shadow-lg border border-[#d6e5ef]">
             <div className="grid grid-cols-1 md:grid-cols-3">
-              <div className="flex flex-col items-center justify-center bg-school-green p-8 md:p-10">
-                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#F9A825' }}>
-                  <div className="w-full h-full flex items-center justify-center bg-[#0A2E0A]">
-                    <img src="/assets/about/teprincipal.png" alt="Principal" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+              <div className="flex flex-col items-center justify-center bg-school-blue p-8 md:p-10">
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
+                  <div className="w-full h-full flex items-center justify-center bg-[#133d58]">
+                    <img src="/assets/about/teprincipal.png" alt="Ms. N. Magwaza" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white text-center leading-tight">Mr. T. Mhlakaza</h3>
-                <p className="text-sm font-semibold mt-1 text-center" style={{ color: '#F9A825' }}>Principal</p>
-                <div className="w-10 h-0.5 mt-4 rounded-full opacity-60" style={{ backgroundColor: '#F9A825' }} />
+                <h3 className="text-lg font-bold text-white text-center leading-tight">Ms. N. Magwaza</h3>
+                <p className="text-sm font-semibold mt-1 text-center" style={{ color: '#C9A84C' }}>Principal</p>
+                <div className="w-10 h-0.5 mt-4 rounded-full opacity-60" style={{ backgroundColor: '#C9A84C' }} />
               </div>
 
               <div className="col-span-2 flex flex-col justify-center p-8 md:p-12">
-                <div className="text-6xl font-serif leading-none mb-2 opacity-40 select-none" style={{ color: '#F9A825' }}>"</div>
+                <div className="text-6xl font-serif leading-none mb-2 opacity-40 select-none" style={{ color: '#C9A84C' }}>"</div>
                 <div className="space-y-4 text-gray-700 text-base sm:text-lg leading-relaxed">
                   <p>At Masakala Senior Secondary School, we are committed to providing a safe, inclusive and stimulating environment that enables every learner to reach their full potential through quality teaching, strong values and community partnership.</p>
-                  <p>Our school may be in a rural area, but our commitment to academic excellence and holistic development is unwavering. We strive to empower our learners to overcome social challenges and achieve lifelong success.</p>
-                  <p>Located in the heart of Masakala, we invite families and learners to join us in this journey of growth, learning, and achievement.</p>
+                  <p>We are proud of our learners who achieved an 82% matric pass rate — a testament to the dedication of both our staff and our learners in striving for excellence in all we do. Our school may be new, but our commitment to academic excellence and holistic development is unwavering.</p>
+                  <p>Located in the heart of Shayamoya, we invite families and learners to join us in this journey of growth, learning, and achievement.</p>
                 </div>
-                <div className="text-6xl font-serif leading-none mt-2 text-right opacity-40 select-none" style={{ color: '#F9A825' }}>"</div>
+                <div className="text-6xl font-serif leading-none mt-2 text-right opacity-40 select-none" style={{ color: '#C9A84C' }}>"</div>
               </div>
             </div>
           </div>
@@ -105,18 +105,18 @@ export const About = () => {
           viewport={{ once: true }}
         >
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-school-green mb-2">Key Facts</h2>
-            <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#F9A825' }} />
+            <h2 className="text-3xl font-extrabold text-school-blue mb-2">Key Facts</h2>
+            <div className="w-16 h-1 mx-auto rounded-full" style={{ backgroundColor: '#C9A84C' }} />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { label: 'School Type', value: 'Public No-Fee School' },
               { label: 'Grades', value: 'Grade 8 – 12' },
-              { label: 'Location', value: 'Matatiele, EC' },
-              { label: 'EMIS No', value: '200500585' },
+              { label: 'Location', value: 'Shayamoya, Kokstad' },
+              { label: 'Established', value: '2018' },
             ].map((fact, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 text-center shadow border border-gray-100 border-b-4" style={{ borderBottomColor: '#F9A825' }}>
-                <p className="text-2xl font-bold text-school-green">{fact.value}</p>
+              <div key={i} className="bg-white rounded-2xl p-6 text-center shadow border border-gray-100 border-b-4" style={{ borderBottomColor: '#1A5276' }}>
+                <p className="text-2xl font-bold text-school-blue">{fact.value}</p>
                 <p className="text-gray-500 font-medium mt-1">{fact.label}</p>
               </div>
             ))}

@@ -28,7 +28,7 @@ async function fileToDataUrl(file: File): Promise<string> {
 
 // ─── Reusable UI ──────────────────────────────────────────────────────────────
 
-const inp = 'border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-school-green/40 focus:border-school-green transition w-full bg-white';
+const inp = 'border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-school-blue/40 focus:border-school-blue transition w-full bg-white';
 const sel = inp + ' cursor-pointer';
 
 const Field: React.FC<{ label: string; required?: boolean; children: React.ReactNode; className?: string }> = ({ label, required, children, className = '' }) => (
@@ -41,8 +41,8 @@ const Field: React.FC<{ label: string; required?: boolean; children: React.React
 );
 
 const SectionHeading = ({ title }: { title: string }) => (
-  <div className="flex items-center gap-2 pb-2 border-b-2 border-school-green/20 mb-5">
-    <FileText size={15} className="text-school-green shrink-0" />
+  <div className="flex items-center gap-2 pb-2 border-b-2 border-school-blue/20 mb-5">
+    <FileText size={15} className="text-school-blue shrink-0" />
     <h3 className="text-sm font-black uppercase tracking-widest text-gray-700">{title}</h3>
   </div>
 );
@@ -52,8 +52,8 @@ const StepBadge = ({ num, label, active, done }: {
 }) => (
   <div className="flex items-center gap-2">
     <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-black border-2 transition-all
-      ${done ? 'bg-school-green border-school-green text-white'
-      : active ? 'bg-white border-white text-school-green'
+      ${done ? 'bg-school-blue border-school-blue text-white'
+      : active ? 'bg-white border-white text-school-blue'
       : 'bg-white/20 border-white/30 text-white/60'}`}>
       {done ? <CheckCircle size={14} /> : num}
     </div>
@@ -72,22 +72,22 @@ const FileUploadRow: React.FC<{
   const file = files[fileKey];
   return (
     <div className={`flex items-center gap-3 p-3 rounded-xl border-2 transition
-      ${file ? 'border-school-green bg-green-50'
+      ${file ? 'border-school-blue bg-green-50'
       : required ? 'border-dashed border-red-300 bg-red-50/30'
       : 'border-dashed border-gray-300 bg-gray-50'}`}>
       <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center
-        ${file ? 'bg-school-green text-white' : 'bg-gray-200 text-gray-400'}`}>
+        ${file ? 'bg-school-blue text-white' : 'bg-gray-200 text-gray-400'}`}>
         {file ? <CheckCircle size={16} /> : <Upload size={16} />}
       </div>
       <div className="flex-1 min-w-0">
         <div className="text-xs font-semibold text-gray-700 leading-tight">
           {label}{required && <span className="text-red-500 ml-1">*</span>}
         </div>
-        <div className={`text-xs mt-0.5 truncate ${file ? 'text-school-green' : 'text-gray-400'}`}>
+        <div className={`text-xs mt-0.5 truncate ${file ? 'text-school-blue' : 'text-gray-400'}`}>
           {file ? file.name : 'No file chosen'}
         </div>
       </div>
-      <label className="shrink-0 text-xs font-bold text-school-green cursor-pointer hover:underline">
+      <label className="shrink-0 text-xs font-bold text-school-blue cursor-pointer hover:underline">
         {file ? 'Change' : 'Upload'}
         <input type="file" className="hidden" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
           onChange={e => onChange(fileKey, e.target.files?.[0] ?? null)} />
@@ -406,7 +406,7 @@ export const Boarding = () => {
           transition={{ duration: 0.25 }}
           className="text-center p-10 sm:p-12 bg-white rounded-3xl shadow-2xl max-w-md"
         >
-          <div className="w-20 h-20 bg-green-100 text-school-green rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-20 h-20 bg-green-100 text-school-blue rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle size={48} />
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Boarding Application Submitted!</h2>
@@ -439,7 +439,7 @@ export const Boarding = () => {
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
 
           {/* Header */}
-          <div className="bg-school-green px-8 py-7 text-white">
+          <div className="bg-school-blue px-8 py-7 text-white">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
               <div>
                 <h2 className="text-2xl font-bold">Boarding & Bursary Application</h2>
@@ -557,7 +557,7 @@ export const Boarding = () => {
                           <thead>
                             <tr>
                               <th className="text-left px-3 py-2 bg-gray-100 text-xs font-bold text-gray-600 uppercase w-44">Field</th>
-                              <th className="text-left px-3 py-2 bg-school-green/10 text-xs font-bold text-school-green uppercase">Father / Guardian / Responsible Person</th>
+                              <th className="text-left px-3 py-2 bg-school-blue/10 text-xs font-bold text-school-blue uppercase">Father / Guardian / Responsible Person</th>
                               <th className="text-left px-3 py-2 bg-blue-50 text-xs font-bold text-blue-600 uppercase">Mother / Relative</th>
                             </tr>
                           </thead>
@@ -663,7 +663,7 @@ export const Boarding = () => {
                       </ol>
                       <label className="flex items-start gap-3 cursor-pointer group">
                         <input type="checkbox" checked={undertaking} onChange={e => setUndertaking(e.target.checked)}
-                          className="mt-0.5 w-4 h-4 accent-school-green cursor-pointer" />
+                          className="mt-0.5 w-4 h-4 accent-school-blue cursor-pointer" />
                         <span className="text-sm text-gray-700 group-hover:text-gray-900">
                           I accept and agree to the above undertaking as the parent/guardian of the applicant.
                         </span>
@@ -738,7 +738,7 @@ export const Boarding = () => {
                       <div className="overflow-x-auto rounded-xl border border-gray-200">
                         <table className="w-full text-sm">
                           <thead>
-                            <tr className="bg-school-green/10">
+                            <tr className="bg-school-blue/10">
                               <th className="px-3 py-2 text-left text-xs font-bold text-gray-600 uppercase">#</th>
                               <th className="px-3 py-2 text-left text-xs font-bold text-gray-600 uppercase">Surname</th>
                               <th className="px-3 py-2 text-left text-xs font-bold text-gray-600 uppercase">First Name</th>
@@ -767,7 +767,7 @@ export const Boarding = () => {
                         </table>
                       </div>
                       <button type="button" onClick={() => setChildren(p => [...p, { surname:'',firstName:'',dob:'',grade:'',school:'' }])}
-                        className="mt-2 text-xs text-school-green font-semibold hover:underline">+ Add another child</button>
+                        className="mt-2 text-xs text-school-blue font-semibold hover:underline">+ Add another child</button>
                     </section>
 
                     {/* Other dependent children */}
@@ -803,7 +803,7 @@ export const Boarding = () => {
                       <div className="overflow-x-auto rounded-xl border border-gray-200">
                         <table className="w-full text-sm">
                           <thead>
-                            <tr className="bg-school-green/10">
+                            <tr className="bg-school-blue/10">
                               <th className="px-3 py-2 text-left text-xs font-bold text-gray-600 uppercase w-24">Person</th>
                               <th className="px-3 py-2 text-left text-xs font-bold text-gray-600 uppercase">Name of Employer</th>
                               <th className="px-3 py-2 text-left text-xs font-bold text-gray-600 uppercase">Tel of Employer</th>
@@ -954,12 +954,12 @@ export const Boarding = () => {
 
                   {step < 3 ? (
                     <button type="button" onClick={goNext}
-                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-green text-white text-sm font-bold hover:bg-school-green/90 transition shadow">
+                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-blue text-white text-sm font-bold hover:bg-school-blue/90 transition shadow">
                       Next <ChevronRight size={16} />
                     </button>
                   ) : (
                     <button type="submit" disabled={submitting}
-                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-green text-white text-sm font-bold hover:bg-school-green/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow">
+                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-blue text-white text-sm font-bold hover:bg-school-blue/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow">
                       {submitting
                         ? <><span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" /> Submitting…</>
                         : <><CheckCircle size={16} /> Submit Boarding Application</>}
