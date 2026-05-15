@@ -85,7 +85,7 @@ export const Hero = () => {
         <div className="relative">
           <div className="absolute -inset-3 bg-[#DC143C] rounded-full opacity-25 blur-lg"></div>
           <img 
-            src="/assets/logo/telogo.png" 
+            src="/assets/logo/mslogo.png" 
             alt="Logo" 
             className="relative w-18 h-18 rounded-full border-3 border-white shadow-xl bg-white"
           />

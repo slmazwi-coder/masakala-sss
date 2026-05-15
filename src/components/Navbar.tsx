@@ -34,7 +34,7 @@ export const Navbar = () => {
               <div className="min-w-0">
                 <span className="md:hidden text-sm font-bold text-white block leading-tight">Masakala SSS</span>
                 <span className="hidden md:block text-base font-bold text-white leading-tight">Masakala Senior Secondary School</span>
-                <span className="text-xs font-semibold tracking-wide uppercase text-white/70">Progress Begins Here</span>
+                <span className="text-xs font-semibold tracking-wide uppercase text-white/70">Reach for the Sky</span>
               </div>
             </Link>
             <div className="hidden md:flex items-center gap-3 shrink-0">

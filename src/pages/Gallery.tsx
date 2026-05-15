@@ -5,7 +5,7 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 const galleryImages = [
   { src: '/assets/gallery/gallery1.jpg', caption: 'School assembly — our thriving community', category: 'School Life' },
   { src: '/assets/gallery/gallery2.jpg', caption: 'Football match day', category: 'Sport' },
-  { src: '/assets/gallery/gallery3.jpg', caption: 'Mount Currie mountain view from school', category: 'Campus' },
+  { src: '/assets/gallery/gallery3.jpg', caption: 'Mountain view from school', category: 'Campus' },
   { src: '/assets/gallery/gallery4.jpg', caption: 'Science class practical', category: 'Academics' },
   { src: '/assets/gallery/gallery5.jpg', caption: 'Staff in formal attire', category: 'Staff' },
   { src: '/assets/gallery/gallery6.jpg', caption: 'Grade 12 learners studying', category: 'Academics' },

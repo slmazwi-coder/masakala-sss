@@ -285,7 +285,7 @@ const defaultNews: NewsItem[] = [
     title: '2026 Admissions Open',
     date: 'Now open',
     content:
-      'Applications for the 2026 academic year at Mount Currie SSS are now open. Grades 8–12. Apply online or contact the school office.',
+      'Applications for the 2026 academic year at Masakala SSS are now open. Grades 8–12. Apply online or contact the school office.',
     image: '',
   },
 ];
@@ -302,9 +302,9 @@ export const setApplications = (items: Application[]) => setItems('admin_applica
 
 // Contact
 const defaultContact: ContactInfo = {
-  address: '4 School Lane, Kokstad, 4700, KwaZulu-Natal',
-  phone: '039 727 3662',
-  email: 'mcsss@telkomsa.net',
+  address: 'Masakala A/A, Matatiele, 4730, Eastern Cape',
+  phone: '+27 78 394 9015',
+  email: 'Contact via Facebook page',
   monThu: '08:00 - 14:30',
   friday: '08:00 - 14:30',
   weekend: 'Closed',
@@ -315,14 +315,14 @@ export const setContact = (info: ContactInfo) => setObject('admin_contact', info
 // About
 const defaultAbout: AboutInfo = {
   historyParagraphs: [
-    'Mount Currie Senior Secondary School is a Section 21, Quintile 4 public school in Kokstad, KwaZulu-Natal.',
-    'Named after the majestic Mount Currie mountain, the school serves 921 learners with 33 dedicated educators across Grades 8–12.',
+    'Masakala Senior Secondary School is a public no-fee secondary school in Masakala A/A, Matatiele, Eastern Cape.',
+    'The school serves learners with dedicated educators across Grades 8–12.',
     'Parents and guardians are encouraged to engage with the school through meetings, events, and ongoing learner support.',
   ],
-  principalName: 'Mr. Solomon',
+  principalName: 'School Principal',
   principalTitle: 'Principal',
   principalMessage: [
-    'Welcome to Mount Currie Senior Secondary School. We are committed to providing a safe, inclusive and stimulating environment that enables every learner to reach their full potential.',
+    'Welcome to Masakala Senior Secondary School. We are committed to providing a safe, inclusive and stimulating environment that enables every learner to reach their full potential.',
     'We value respect, integrity and ubuntu. Together we are striving for excellence in all we do.',
   ],
 };

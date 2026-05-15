@@ -296,11 +296,11 @@ export const Admissions = () => {
               <div>
                 <h2 className="text-2xl font-bold">Application for Admission to School</h2>
                 <p className="text-white/70 text-sm mt-1">
-                  Masakala Senior Secondary School &nbsp;·&nbsp; Shayamoya, Kokstad, KwaZulu-Natal
+                  Masakala Senior Secondary School &nbsp;·&nbsp; Masakala A/A, Matatiele, Eastern Cape
                 </p>
               </div>
               <div className="text-right text-sm text-white/70">
-                <div>Tel: +27 82 611 7032</div>
+                <div>Tel: +27 78 394 9015</div>
                 <div>Step {step} of 3</div>
               </div>
             </div>

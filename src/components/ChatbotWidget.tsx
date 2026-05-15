@@ -134,7 +134,7 @@ async function translateText(text: string, src: SupportedLang, tgt: SupportedLan
 }
 
 // ── Claude AI (Anthropic) ────────────────────────────────────────────────────
-const SYSTEM_PROMPT = `You are a warm, knowledgeable and friendly assistant for Masakala Senior Secondary School in Kokstad, KwaZulu-Natal, South Africa.
+const SYSTEM_PROMPT = `You are a warm, knowledgeable and friendly assistant for Masakala Senior Secondary School in Matatiele, Eastern Cape, South Africa.
 
 You help parents, learners, guardians and community members with anything about the school:
 - Admissions and application process
@@ -149,11 +149,11 @@ You help parents, learners, guardians and community members with anything about 
 
 School details:
 - Name: Masakala Senior Secondary School
-- Location: 4 School Lane, Kokstad, 4700, KwaZulu-Natal
-- Phone: 039 727 3662
-- Email: mcsss@telkomsa.net
-- Motto: "Progress Begins Here"
-- Principal: Mr. Solomon
+- Location: Masakala A/A, Matatiele, 4730, Eastern Cape
+- Phone: +27 78 394 9015
+- Email: Contact via Facebook page
+- Motto: "Reach for the Sky"
+- Principal: (To be confirmed)
 - Deputy Principal: Deputy Principal
 - School hours: Monday–Friday 08:00–14:30
 - Grades: Grade 8 to Grade 12
@@ -194,7 +194,7 @@ async function askClaude(userMessage: string): Promise<string> {
     return text;
   } catch (err) {
     console.error('[Chatbot] Claude request failed:', err);
-    return 'I\'m having trouble connecting right now. Please contact the school directly at 039 727 3662.';
+    return 'I\'m having trouble connecting right now. Please contact the school directly at +27 78 394 9015.';
   }
 }
 
@@ -308,7 +308,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
         {
           id: uid(),
           role: 'bot',
-          text: 'Something went wrong. Please contact the school at 039 727 3662 or message us on Facebook: Masakala SSS.',
+          text: 'Something went wrong. Please contact the school at +27 78 394 9015 or message us on Facebook: Masakala SSS.',
           createdAt: Date.now(),
         },
       ]);
