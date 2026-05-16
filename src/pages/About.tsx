@@ -35,13 +35,13 @@ export const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: 0.05 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden shadow-2xl border-4 border-[#FED219] h-[280px] sm:h-[360px]"
+            className="rounded-2xl overflow-hidden shadow-2xl border-4 border-[#FED219]"
           >
             {!campusFailed ? (
               <img
                 src="/assets/about/mscampus.png"
                 alt="Masakala SSS campus"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
                 onError={() => setCampusFailed(true)}
               />
             ) : (
