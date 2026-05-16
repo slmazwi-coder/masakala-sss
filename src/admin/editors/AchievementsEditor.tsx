@@ -67,7 +67,7 @@ export const AchievementsEditor = () => {
               setEditing({ id: generateId(), name: '', title: '', year: '', desc: '', image: '' });
               setIsNew(true);
             }}
-            className="flex items-center gap-2 bg-school-green text-[#C9A84C] px-4 py-2 rounded-xl text-sm font-medium hover:bg-green-800"
+            className="flex items-center gap-2 bg-school-green text-[#FED219] px-4 py-2 rounded-xl text-sm font-medium hover:bg-school-dark"
           >
             <Plus size={16} /> Add Entry
           </button>
@@ -93,7 +93,7 @@ export const AchievementsEditor = () => {
               <button 
                 onClick={saveHall} 
                 disabled={isScanning}
-                className="flex items-center gap-2 bg-school-green text-[#C9A84C] px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-800 disabled:opacity-50"
+                className="flex items-center gap-2 bg-school-green text-[#FED219] px-4 py-2 rounded-lg text-sm font-medium hover:bg-school-dark disabled:opacity-50"
               >
                 {isScanning ? (
                   <><Loader2 size={14} className="animate-spin" /> Analyzing...</>

@@ -29,12 +29,12 @@ const staffData: StaffMember[] = [
 const categories = ['Leadership', 'Departmental Heads', 'Class Teachers', 'Support Staff'];
 
 const StaffCard = ({ member }: { member: StaffMember }) => (
-  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center p-6 text-center border border-[#C9A84C]/30 hover:-translate-y-1">
-    <div className="w-24 h-24 rounded-full bg-[#1B5E20] border-4 border-[#C9A84C] flex items-center justify-center mb-4 overflow-hidden">
+  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center p-6 text-center border border-[#FED219]/30 hover:-translate-y-1">
+    <div className="w-24 h-24 rounded-full bg-[#0D3B14] border-4 border-[#FED219] flex items-center justify-center mb-4 overflow-hidden">
       {member.image ? (
         <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
       ) : (
-        <div className="w-full h-full bg-[#1B5E20] flex items-center justify-center text-[#C9A84C] font-bold text-2xl font-serif">
+        <div className="w-full h-full bg-[#0D3B14] flex items-center justify-center text-[#FED219] font-bold text-2xl font-serif">
           {member.name.split(' ').map(n => n[0]).join('')}
         </div>
       )}
@@ -42,7 +42,7 @@ const StaffCard = ({ member }: { member: StaffMember }) => (
     <h3 className="text-sm font-bold text-school-green leading-tight">{member.name}</h3>
     <p className="text-xs font-semibold mt-1 text-school-green">{member.position}</p>
     {member.subject && (
-      <span className="mt-2 inline-block bg-[#1B5E20]/10 text-school-green text-xs font-medium px-3 py-1 rounded-full">
+      <span className="mt-2 inline-block bg-[#0D3B14]/10 text-school-green text-xs font-medium px-3 py-1 rounded-full">
         {member.subject}
       </span>
     )}
@@ -68,7 +68,7 @@ export const Staff = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-green text-[#C9A84C] border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold border-2 transition-all ${activeCategory === cat ? 'bg-school-green text-[#FED219] border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#FED219]/10'}`}
             >
               {cat}
             </button>

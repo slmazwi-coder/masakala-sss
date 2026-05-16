@@ -52,13 +52,13 @@ const StepBadge = ({ num, label, active, done }: {
 }) => (
   <div className="flex items-center gap-2">
     <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-black border-2 transition-all
-      ${done ? 'bg-school-green border-school-green text-[#C9A84C]'
-      : active ? 'bg-[#C9A84C] border-[#C9A84C] text-school-green'
-      : 'bg-[#C9A84C]/20 border-[#C9A84C]/30 text-[#C9A84C]/60'}`}>
+      ${done ? 'bg-school-green border-school-green text-[#FED219]'
+      : active ? 'bg-[#FED219] border-[#FED219] text-school-green'
+      : 'bg-[#FED219]/20 border-[#FED219]/30 text-[#FED219]/60'}`}>
       {done ? <CheckCircle size={14} /> : num}
     </div>
     <span className={`text-xs font-bold uppercase tracking-widest transition-all
-      ${active ? 'text-[#C9A84C]' : done ? 'text-[#C9A84C]/80' : 'text-[#C9A84C]/50'}`}>
+      ${active ? 'text-[#FED219]' : done ? 'text-[#FED219]/80' : 'text-[#FED219]/50'}`}>
       {label}
     </span>
   </div>
@@ -76,7 +76,7 @@ const FileUploadRow: React.FC<{
       : required ? 'border-dashed border-red-300 bg-red-50/30'
       : 'border-dashed border-gray-300 bg-gray-50'}`}>
       <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center
-        ${file ? 'bg-school-green text-[#C9A84C]' : 'bg-gray-200 text-gray-400'}`}>
+        ${file ? 'bg-school-green text-[#FED219]' : 'bg-gray-200 text-gray-400'}`}>
         {file ? <CheckCircle size={16} /> : <Upload size={16} />}
       </div>
       <div className="flex-1 min-w-0">
@@ -427,7 +427,7 @@ export const Boarding = () => {
         <h1 className="section-title">Boarding Application</h1>
 
         {/* Info banner */}
-        <div className="mb-6 bg-[#1B5E20]/5 border border-[#C9A84C]/30 rounded-2xl p-4 flex gap-3">
+        <div className="mb-6 bg-[#0D3B14]/5 border border-[#FED219]/30 rounded-2xl p-4 flex gap-3">
           <Info size={18} className="text-school-green shrink-0 mt-0.5" />
           <div className="text-sm text-gray-800">
             <strong>This application covers two forms:</strong><br />
@@ -439,24 +439,24 @@ export const Boarding = () => {
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
 
           {/* Header */}
-          <div className="bg-school-green px-8 py-7 text-[#C9A84C]">
+          <div className="bg-school-green px-8 py-7 text-[#FED219]">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
               <div>
                 <h2 className="text-2xl font-bold">Boarding & Bursary Application</h2>
-                <p className="text-[#C9A84C]/70 text-sm mt-1">
+                <p className="text-[#FED219]/70 text-sm mt-1">
                   Province of the Eastern Cape – Department of Education &nbsp;·&nbsp; HTL 02 &amp; HTL 03
                 </p>
               </div>
-              <div className="text-right text-xs text-[#C9A84C]/60 leading-relaxed">
+              <div className="text-right text-xs text-[#FED219]/60 leading-relaxed">
                 <div>Year: {learner.year}</div>
                 <div>Step {step} of 3</div>
               </div>
             </div>
 
             {/* Progress */}
-            <div className="relative h-1.5 bg-[#C9A84C]/20 rounded-full mb-5 overflow-hidden">
+            <div className="relative h-1.5 bg-[#FED219]/20 rounded-full mb-5 overflow-hidden">
               <motion.div
-                className="absolute inset-y-0 left-0 bg-[#C9A84C] rounded-full"
+                className="absolute inset-y-0 left-0 bg-[#FED219] rounded-full"
                 animate={{ width: `${((step - 1) / 2) * 100 + 33.33}%` }}
                 transition={{ duration: 0.4 }}
               />
@@ -558,7 +558,7 @@ export const Boarding = () => {
                             <tr>
                               <th className="text-left px-3 py-2 bg-gray-100 text-xs font-bold text-gray-600 uppercase w-44">Field</th>
                               <th className="text-left px-3 py-2 bg-school-green/10 text-xs font-bold text-school-green uppercase">Father / Guardian / Responsible Person</th>
-                              <th className="text-left px-3 py-2 bg-[#C9A84C]/10 text-xs font-bold text-[#C9A84C] uppercase">Mother / Relative</th>
+                              <th className="text-left px-3 py-2 bg-[#FED219]/10 text-xs font-bold text-[#FED219] uppercase">Mother / Relative</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -869,9 +869,9 @@ export const Boarding = () => {
                 {step === 3 && (
                   <>
                     {/* Download declaration */}
-                    <section className="bg-[#1B5E20]/5 border-2 border-[#C9A84C]/30 rounded-2xl p-6">
+                    <section className="bg-[#0D3B14]/5 border-2 border-[#FED219]/30 rounded-2xl p-6">
                       <div className="flex gap-4 items-start">
-                        <div className="w-12 h-12 bg-[#1B5E20]/10 text-school-green rounded-xl flex items-center justify-center shrink-0">
+                        <div className="w-12 h-12 bg-[#0D3B14]/10 text-school-green rounded-xl flex items-center justify-center shrink-0">
                           <Download size={22} />
                         </div>
                         <div className="flex-1">
@@ -885,7 +885,7 @@ export const Boarding = () => {
                           <button
                             type="button"
                             onClick={() => downloadDeclarationForm(guardian.fullNames || 'Guardian', learner.year)}
-                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-school-green text-[#C9A84C] text-sm font-bold hover:bg-[#145218] transition shadow"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-school-green text-[#FED219] text-sm font-bold hover:bg-[#092A0E] transition shadow"
                           >
                             <Download size={16} /> Download Declaration Form (HTL 03 Section 7)
                           </button>
@@ -954,12 +954,12 @@ export const Boarding = () => {
 
                   {step < 3 ? (
                     <button type="button" onClick={goNext}
-                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-green text-[#C9A84C] text-sm font-bold hover:bg-school-green/90 transition shadow">
+                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-school-green text-[#FED219] text-sm font-bold hover:bg-school-green/90 transition shadow">
                       Next <ChevronRight size={16} />
                     </button>
                   ) : (
                     <button type="submit" disabled={submitting}
-                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-green text-[#C9A84C] text-sm font-bold hover:bg-school-green/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow">
+                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-xl bg-school-green text-[#FED219] text-sm font-bold hover:bg-school-green/90 disabled:opacity-60 disabled:cursor-not-allowed transition shadow">
                       {submitting
                         ? <><span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" /> Submitting…</>
                         : <><CheckCircle size={16} /> Submit Boarding Application</>}

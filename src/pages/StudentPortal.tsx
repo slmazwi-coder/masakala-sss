@@ -41,15 +41,15 @@ export const StudentPortal = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-school-green text-[#C9A84C]">
+      <div className="bg-school-green text-[#FED219]">
         <div className="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between gap-4">
           <div>
-            <div className="text-sm text-[#C9A84C]/80">Student Portal</div>
+            <div className="text-sm text-[#FED219]/80">Student Portal</div>
             <div className="text-2xl font-bold">Student No: {studentNumber}</div>
           </div>
           <button
             onClick={logout}
-            className="inline-flex items-center gap-2 bg-[#C9A84C]/10 hover:bg-[#C9A84C]/20 transition-colors px-4 py-2 rounded-xl font-semibold"
+            className="inline-flex items-center gap-2 bg-[#FED219]/10 hover:bg-[#FED219]/20 transition-colors px-4 py-2 rounded-xl font-semibold"
           >
             <LogOut size={18} /> Logout
           </button>
