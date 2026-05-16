@@ -58,7 +58,7 @@ export const Contact = () => {
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 min-h-[400px]">
             <iframe
               title="Masakala SSS Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500!2d28.8!3d-30.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMatatiele%2C+Eastern+Cape!5e0!3m2!1sen!2sza!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13778.133511589447!2d28.830491147533944!3d-30.30734293136339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef4d7506f122c9b%3A0x5bf3ca6c617aaf0f!2sMasakala%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1"
               className="w-full h-full min-h-[400px] border-0"
               allowFullScreen
               loading="lazy"
