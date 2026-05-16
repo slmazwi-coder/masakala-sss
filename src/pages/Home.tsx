@@ -59,15 +59,15 @@ export const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               className="bg-white rounded-xl p-8 text-center"
-              style={{ border: '2px solid #1B5E20' }}
+              style={{ border: '2px solid #0D3B14' }}
             >
-              <div className="flex items-center justify-center gap-2 text-xs font-semibold mb-3" style={{ color: '#1B5E20' }}>
+              <div className="flex items-center justify-center gap-2 text-xs font-semibold mb-3" style={{ color: '#0D3B14' }}>
                 <Calendar size={14} />
                 <span>{newsItems[current].date}</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{newsItems[current].title}</h3>
               <p className="text-gray-600 mb-4">{newsItems[current].summary}</p>
-              <a href={newsItems[current].link} className="inline-flex items-center gap-2 font-semibold" style={{ color: '#1B5E20' }}>
+              <a href={newsItems[current].link} className="inline-flex items-center gap-2 font-semibold" style={{ color: '#0D3B14' }}>
                 View All <ArrowRight size={16} />
               </a>
             </motion.div>
@@ -75,7 +75,7 @@ export const Home = () => {
           
           <div className="flex justify-center gap-2 mt-4">
             {newsItems.map((_, i) => (
-              <button key={i} onClick={() => setCurrent(i)} className={`h-1.5 rounded-full transition-all ${i === current ? 'w-6' : 'w-1.5 bg-gray-300'}`} style={{ backgroundColor: i === current ? '#1B5E20' : undefined }} />
+              <button key={i} onClick={() => setCurrent(i)} className={`h-1.5 rounded-full transition-all ${i === current ? 'w-6' : 'w-1.5 bg-gray-300'}`} style={{ backgroundColor: i === current ? '#0D3B14' : undefined }} />
             ))}
           </div>
         </div>
@@ -130,7 +130,7 @@ export const Home = () => {
       <section className="py-10 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <p className="text-sm text-gray-400 uppercase tracking-widest mb-2">Our Motto</p>
-          <p className="text-3xl md:text-4xl font-light italic" style={{ color: '#1B5E20' }}>
+          <p className="text-3xl md:text-4xl font-light italic" style={{ color: '#0D3B14' }}>
             "Reach for the Sky"
           </p>
         </div>

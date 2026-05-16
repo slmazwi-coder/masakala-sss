@@ -5,7 +5,7 @@ import { BookOpen, Calculator, Globe, Languages, FlaskConical, Briefcase, Palett
 const subjects = [
   {
     category: 'Mathematics & Science',
-    color: 'bg-[#1B5E20]/10 border-[#C9A84C]/30',
+    color: 'bg-[#0D3B14]/10 border-[#FED219]/30',
     iconColor: 'text-school-green',
     items: [
       { name: 'Mathematics', icon: Calculator, description: 'Mathematical reasoning, algebra, geometry, trigonometry and calculus for the National Senior Certificate.' },
@@ -69,7 +69,7 @@ export const Subjects = () => {
             <button
               key={s.category}
               onClick={() => setActiveCategory(s.category)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === s.category ? 'bg-school-green text-[#C9A84C] border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#C9A84C]/10'}`}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${activeCategory === s.category ? 'bg-school-green text-[#FED219] border-school-green' : 'bg-white text-school-green border-school-green hover:bg-[#FED219]/10'}`}
             >
               {s.category}
             </button>
@@ -96,10 +96,10 @@ export const Subjects = () => {
         </div>
 
         {/* Pass rate */}
-        <div className="mt-12 bg-school-green rounded-3xl p-8 text-center text-[#C9A84C]">
-          <p className="text-[#C9A84C]/70 uppercase tracking-widest text-sm font-bold mb-2">NSC Matric Pass Rate</p>
-          <p className="text-5xl font-bold mb-1" style={{ color: '#C9A84C' }}>72.6%</p>
-          <p className="text-[#C9A84C]/70">Class of 2020 &middot; Up from 63.2% in 2019</p>
+        <div className="mt-12 bg-school-green rounded-3xl p-8 text-center text-[#FED219]">
+          <p className="text-[#FED219]/70 uppercase tracking-widest text-sm font-bold mb-2">NSC Matric Pass Rate</p>
+          <p className="text-5xl font-bold mb-1" style={{ color: '#FED219' }}>72.6%</p>
+          <p className="text-[#FED219]/70">Class of 2020 &middot; Up from 63.2% in 2019</p>
         </div>
       </div>
     </div>

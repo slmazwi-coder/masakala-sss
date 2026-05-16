@@ -41,21 +41,21 @@ export const Achievements = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="rounded-3xl overflow-hidden mb-12 shadow-2xl"
-          style={{ background: '#1B5E20' }}
+          style={{ background: '#0D3B14' }}
         >
-          <div className="p-8 sm:p-12 text-center text-[#C9A84C]">
+          <div className="p-8 sm:p-12 text-center text-[#FED219]">
             <div className="flex justify-center mb-4">
-              <div className="w-16 h-16 rounded-full bg-[#C9A84C]/20 flex items-center justify-center">
-                <Trophy size={36} style={{ color: '#C9A84C' }} />
+              <div className="w-16 h-16 rounded-full bg-[#FED219]/20 flex items-center justify-center">
+                <Trophy size={36} style={{ color: '#FED219' }} />
               </div>
             </div>
-            <p className="text-[#C9A84C]/70 uppercase tracking-widest text-sm font-bold mb-2">Class of 2023</p>
+            <p className="text-[#FED219]/70 uppercase tracking-widest text-sm font-bold mb-2">Class of 2023</p>
             <h2 className="text-4xl sm:text-5xl font-bold mb-2">82%</h2>
-            <p className="text-xl text-[#C9A84C]/80 mb-1">Matric Pass Rate</p>
-            <p className="text-[#C9A84C]/60 mb-6">Masakala SSS continues to strive for excellence</p>
+            <p className="text-xl text-[#FED219]/80 mb-1">Matric Pass Rate</p>
+            <p className="text-[#FED219]/60 mb-6">Masakala SSS continues to strive for excellence</p>
             <div className="flex justify-center gap-2 flex-wrap">
-              <span className="px-4 py-1.5 rounded-full bg-[#C9A84C]/20 text-sm font-semibold">#ProgressBeginsHere</span>
-              <span className="px-4 py-1.5 rounded-full bg-[#C9A84C]/20 text-sm font-semibold">#MasakalaSSS</span>
+              <span className="px-4 py-1.5 rounded-full bg-[#FED219]/20 text-sm font-semibold">#ProgressBeginsHere</span>
+              <span className="px-4 py-1.5 rounded-full bg-[#FED219]/20 text-sm font-semibold">#MasakalaSSS</span>
             </div>
           </div>
         </motion.div>
@@ -69,15 +69,15 @@ export const Achievements = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className={`rounded-2xl p-6 border-2 ${a.highlight ? 'border-[#1B5E20] bg-green-50' : 'border-gray-100 bg-white'} shadow-sm hover:shadow-md transition-shadow`}
+              className={`rounded-2xl p-6 border-2 ${a.highlight ? 'border-[#0D3B14] bg-green-50' : 'border-gray-100 bg-white'} shadow-sm hover:shadow-md transition-shadow`}
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-xl bg-[#1B5E20]/10 text-[#1B5E20] shrink-0">
+                <div className="p-3 rounded-xl bg-[#0D3B14]/10 text-[#0D3B14] shrink-0">
                   <a.icon size={24} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-xs font-bold text-[#1B5E20] uppercase tracking-widest">{a.year}</span>
+                    <span className="text-xs font-bold text-[#0D3B14] uppercase tracking-widest">{a.year}</span>
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{a.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{a.description}</p>

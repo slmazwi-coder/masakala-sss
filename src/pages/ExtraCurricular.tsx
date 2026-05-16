@@ -27,13 +27,13 @@ const ProgramCard: React.FC<{ prog: Activity }> = ({ prog }) => {
       <div className="aspect-video bg-school-green/10 flex items-center justify-center relative">
         <Icon size={64} className="text-school-green/40" />
         <div className="absolute inset-0 bg-school-green/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <Icon size={48} className="text-[#C9A84C]" />
+          <Icon size={48} className="text-[#FED219]" />
         </div>
       </div>
       <div className="p-6">
         <div className="flex items-center gap-2 mb-2">
           <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${
-            prog.category === 'Sport' ? 'bg-[#1B5E20]/10 text-school-green' :
+            prog.category === 'Sport' ? 'bg-[#0D3B14]/10 text-school-green' :
             prog.category === 'Academic' ? 'bg-purple-100 text-purple-700' :
             'bg-orange-100 text-orange-700'
           }`}>{prog.category}</span>
@@ -107,8 +107,8 @@ export const ExtraCurricular = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {accolades.map((a, i) => (
               <div key={i} className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ background: '#C9A84C' }}>
-                  <Trophy size={18} className="text-[#1B5E20]" />
+                <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ background: '#FED219' }}>
+                  <Trophy size={18} className="text-[#0D3B14]" />
                 </div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{a.title}</p>

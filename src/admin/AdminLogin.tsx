@@ -68,7 +68,7 @@ export const AdminLogin = () => {
 
           <button
             type="submit"
-            className="w-full bg-school-green text-[#C9A84C] py-3 rounded-xl font-bold hover:bg-school-green/80 transition-colors"
+            className="w-full bg-school-green text-[#FED219] py-3 rounded-xl font-bold hover:bg-school-green/80 transition-colors"
           >
             Sign In
           </button>
