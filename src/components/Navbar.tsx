@@ -29,7 +29,7 @@ export const Navbar = () => {
               <img
                 src="/assets/logo/mslogo.png"
                 alt="Masakala SSS Logo"
-                className="h-12 w-12 shrink-0 rounded-lg shadow-md object-contain"
+                className="h-12 w-12 shrink-0 object-contain"
               />
               <div className="min-w-0">
                 <span className="md:hidden text-sm font-bold text-[#0D3B14] block leading-tight">Masakala SSS</span>
