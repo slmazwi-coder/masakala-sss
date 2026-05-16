@@ -14,7 +14,7 @@ export const Footer = () => {
               <img
                 src="/assets/logo/mslogo.png"
                 alt="Masakala SSS Logo"
-                className="h-14 w-14 shrink-0 rounded-full shadow-md object-contain"
+                className="h-14 w-14 shrink-0 rounded-lg shadow-md object-contain"
               />
               <div>
                 <h3 className="text-base font-bold leading-tight">Masakala Senior Secondary School</h3>

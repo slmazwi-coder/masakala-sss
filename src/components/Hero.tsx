@@ -83,11 +83,11 @@ export const Hero = () => {
       {/* Logo overlapping */}
       <div className="relative -mt-10 flex justify-center z-10">
         <div className="relative">
-          <div className="absolute -inset-3 bg-[#FED219] rounded-full opacity-40 blur-lg"></div>
+          <div className="absolute -inset-3 bg-[#FED219] rounded-xl opacity-40 blur-lg"></div>
           <img 
             src="/assets/logo/mslogo.png" 
             alt="Logo" 
-            className="relative w-18 h-18 rounded-full border-4 border-[#FED219] shadow-xl bg-white"
+            className="relative w-18 h-18 rounded-lg border-4 border-[#FED219] shadow-xl bg-white"
           />
         </div>
       </div>
